@@ -10,5 +10,6 @@
     <local:MainPage2 Title="薬の登録" />
 
 
+
     <local:MainPage3 Title="服用履歴" />
 </TabbedPage>
