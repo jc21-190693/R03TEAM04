@@ -8,6 +8,13 @@ namespace App3.page
         public MainPage1()
         {
             InitializeComponent();
+              SetButton.Clicked += SetButton_Clicked;
         }
+
+        	
+       private void SettButton_Clicked(object sender, EventArgs e)
+{
+   Application.Current.MainPage1 = new SetPage();
+}
     }
 }
