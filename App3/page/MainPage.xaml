@@ -8,9 +8,7 @@
     <local:MainPage1 Title="ホーム" />
 
     <local:MainPage2 Title="薬の登録" />
-    
-  <ContentPage Title="服用履歴" />
 
-   
 
+    <local:MainPage3 Title="服用履歴" />
 </TabbedPage>
