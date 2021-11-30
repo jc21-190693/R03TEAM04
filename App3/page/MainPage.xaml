@@ -4,9 +4,9 @@
             xmlns:local="clr-namespace:App3.page"
              x:Class="App3.MainPage">
   <!--Pages can be added as references or inline-->
-    <local:MainPage1 Title="MainPage1" />
+    <local:MainPage1 Title="ホーム" />
 
-    <local:MainPage2 Title="MainPage2" />
+    <local:MainPage2 Title="薬の登録" />
     
-  <ContentPage Title="Tab 3" />
+    <local:MainPage3 Title="服用履歴" />
 </TabbedPage>
