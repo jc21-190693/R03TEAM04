@@ -4,9 +4,6 @@
              x:Class="App3.page.MainPage3">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-                <Label Text="〇月" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
