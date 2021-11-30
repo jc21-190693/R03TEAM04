@@ -20,6 +20,9 @@
     <Compile Update="page\MainPage1.xaml.cs">
       <DependentUpon>MainPage1.xaml</DependentUpon>
     </Compile>
+    <Compile Update="page\MainPage3.xaml.cs">
+      <DependentUpon>MainPage3.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -27,6 +30,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="page\MainPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="page\MainPage3.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
