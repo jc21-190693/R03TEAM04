@@ -10,5 +10,5 @@
 
     <local:MainPage3 Title="服用履歴" />
 
-    <ContentPage Title="tab3" />
+  
 </TabbedPage>
