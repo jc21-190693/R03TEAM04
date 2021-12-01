@@ -11,5 +11,12 @@
 
 
 
+
     <local:MainPage3 Title="服用履歴" />
+
+    <local:TestPage Title="テスト用" />
+
+
+
+
 </TabbedPage>
