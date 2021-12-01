@@ -9,13 +9,7 @@ namespace App3.page
         public MainPage1()
         {
             InitializeComponent();
-            NextButton.Clicked += NextButton_Clicked;
+          
         }
-        private void NextButton_Clicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new SetPage();
-        }
-
-
     }
 }
