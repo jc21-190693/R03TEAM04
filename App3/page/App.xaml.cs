@@ -38,12 +38,6 @@ namespace App3
 {
     public partial class App : Application
     {
-
-
-
-
-
-        /*
         public MainPage()
         {
             InitializeComponent();
@@ -55,13 +49,17 @@ namespace App3
             Navigtion.PushAsync(new subPage());
         }
 
-        */
 
 
 
 
 
 
+
+
+
+
+/*
 
 
         static Database database;
@@ -99,7 +97,7 @@ namespace App3
         {
             // Handle when your app resumes
         }
-
+*/
     }
 
 }
