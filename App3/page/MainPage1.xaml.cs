@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using System;
+using Xamarin.Forms;
 
 namespace App3.page
 
@@ -7,7 +8,9 @@ namespace App3.page
     {
         public MainPage1()
         {
+            
             InitializeComponent();
+          
         }
     }
 }
