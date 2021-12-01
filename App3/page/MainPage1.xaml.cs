@@ -8,6 +8,7 @@ namespace App3.page
     {
         public MainPage1()
         {
+            
             InitializeComponent();
           
         }

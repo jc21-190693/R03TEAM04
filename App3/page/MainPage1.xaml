@@ -8,11 +8,13 @@
             <Label Text="今日飲む薬" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
+
         <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
     
         <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
 
         
+
     </StackLayout>
 
 </ContentPage>
