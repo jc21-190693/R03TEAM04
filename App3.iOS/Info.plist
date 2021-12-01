@@ -30,9 +30,9 @@
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
 	<string>App3</string>
-	<key>XSAppIconAssets</key>
-	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleDisplayName</key>
 	<string>メディシンリマインダー</string>
+	<key>XSAppIconAssets</key>
+	<string>Testicons.xcassets/AppIcons.appiconset</string>
 </dict>
 </plist>
