@@ -4,6 +4,11 @@
              x:Class="App3.page.TestPage">
     <ContentPage.Content>
         <StackLayout Margin="20,35,20,20">
+
+            <Label Text="ダイヤモンド不愉快"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            
             <Entry x:Name="nameEntry"
                Placeholder="Enter name" />
             <Entry x:Name="ageEntry"
