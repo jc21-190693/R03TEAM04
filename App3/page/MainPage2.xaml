@@ -4,7 +4,7 @@
              x:Class="App3.page.MainPage2">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
                 <Label Text="薬の登録" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
         </StackLayout>

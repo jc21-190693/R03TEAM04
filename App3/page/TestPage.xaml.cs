@@ -2,15 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace App3.page
+using System.Threading.Tasks;using Xamarin.Forms;
+using Xamarin.Forms.Xaml;namespace App3.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TestPage: ContentPage
+    public partial class TestPage : ContentPage
     {
         public TestPage()
         {
@@ -31,9 +27,11 @@ namespace App3.page
                 {
                     Name = nameEntry.Text,
                     Age = int.Parse(ageEntry.Text)
+
                 });
 
                 nameEntry.Text = ageEntry.Text = string.Empty;
+
                 collectionView.ItemsSource = await App.Database.GetPeopleAsync();
             }
         }
