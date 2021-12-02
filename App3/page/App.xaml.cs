@@ -1,4 +1,4 @@
-﻿/*using Xamarin.Forms;a
+﻿/*using Xamarin.Forms;
 
 namespace App3
 {
