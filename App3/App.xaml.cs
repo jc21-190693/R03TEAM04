@@ -54,6 +54,12 @@ namespace App3
 
             MainPage = new MainPage();
         }
+        public App()
+        {
+            InitializeComponent();
+
+            MainPage1 = new NavigationPage(new MainPage1());
+        }
 
         protected override void OnStart()
         {
