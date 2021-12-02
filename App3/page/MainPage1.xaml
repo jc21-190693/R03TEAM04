@@ -13,7 +13,7 @@
     
         <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
 
-        <Button Text="Button_ChangeText" />
+        <Button Text="set" Clicked="OnButtonClicked" />
     </StackLayout>
 
 </ContentPage>

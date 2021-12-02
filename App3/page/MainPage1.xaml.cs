@@ -12,6 +12,11 @@ namespace App3.page
             InitializeComponent();
           
         }
+
+        void OnButtonClicked(object sender, EventArgs e)
+{
+    (sender as Button).Text = "Click me again!";
+}
       
     }
 }
