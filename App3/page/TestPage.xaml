@@ -7,6 +7,7 @@ x:Class="App3.page.TestPage">
 
 
             <Label Text="ダイヤモンド不愉快"
+
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
@@ -17,19 +18,25 @@ x:Class="App3.page.TestPage">
             <Button Text="Add to Database"
                 Clicked="OnButtonClicked" />
 
+
             <CollectionView x:Name="collectionView">
+                
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
                             <Label Text="{Binding Name}"
+
 
                                FontSize="Medium" />
                             <Label Text="{Binding Age}"
                                TextColor="Silver"
                                FontSize="Small" />
                           
+
                         </StackLayout>
+                        
                     </DataTemplate>
+                    
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
