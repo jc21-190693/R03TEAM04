@@ -4,28 +4,35 @@ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 x:Class="App3.page.TestPage">
     <ContentPage.Content>
         <StackLayout Margin="20,35,20,20">
+
+
             <Label Text="ダイヤモンド不愉快"
-                VerticalOptions="CenterAndExpand"
+
+                VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
             <Entry x:Name="nameEntry"
-                Placeholder="Enter name" />
+               Placeholder="Enter name" />
             <Entry x:Name="ageEntry"
-                Placeholder="Enter age" />
-            
+               Placeholder="Enter age" />
             <Button Text="Add to Database"
-                    Clicked="OnButtonClicked" />
-            
+                Clicked="OnButtonClicked" />
+
+
             <CollectionView x:Name="collectionView">
                 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <StackLayout>
                             <Label Text="{Binding Name}"
-                                FontSize="Medium" />
+
+
+                               FontSize="Medium" />
                             <Label Text="{Binding Age}"
-                                TextColor="Silver"
-                                FontSize="Small" />
+                               TextColor="Silver"
+                               FontSize="Small" />
+                          
+
                         </StackLayout>
                         
                     </DataTemplate>

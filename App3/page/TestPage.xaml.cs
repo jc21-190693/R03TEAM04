@@ -12,11 +12,13 @@ using Xamarin.Forms.Xaml;namespace App3.page
         {
             InitializeComponent();
         }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
             collectionView.ItemsSource = await App.Database.GetPeopleAsync();
         }
+
         async void OnButtonClicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(nameEntry.Text) && !string.IsNullOrWhiteSpace(ageEntry.Text))
@@ -25,7 +27,11 @@ using Xamarin.Forms.Xaml;namespace App3.page
                 {
                     Name = nameEntry.Text,
                     Age = int.Parse(ageEntry.Text)
-                }); nameEntry.Text = ageEntry.Text = string.Empty;
+
+                });
+
+                nameEntry.Text = ageEntry.Text = string.Empty;
+
                 collectionView.ItemsSource = await App.Database.GetPeopleAsync();
             }
         }
