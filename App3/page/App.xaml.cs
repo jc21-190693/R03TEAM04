@@ -1,8 +1,4 @@
-﻿//編集した
-//Main.xaml.csが名前
-//教科書118
-
-/*using Xamarin.Forms;
+﻿/*using Xamarin.Forms;
 
 namespace App3
 {
@@ -38,30 +34,6 @@ namespace App3
 {
     public partial class App : Application
     {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        private void Button_Clicked(Object sender,EventArgs e)
-        {
-            //subpageに遷移する
-            Navigtion.PushAsync(new subPage());
-        }
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
         static Database database;
 
         public static Database Database
@@ -97,7 +69,7 @@ namespace App3
         {
             // Handle when your app resumes
         }
-*/
+
     }
 
 }
