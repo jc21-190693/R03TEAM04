@@ -48,12 +48,7 @@ namespace App3
             }
         }
 
-        public App()
-        {
-            InitializeComponent();
-
-            MainPage = new MainPage();
-        }
+        
         public App()
         {
             InitializeComponent();
