@@ -29,9 +29,6 @@
     <Compile Update="page\TestPage.xaml.cs">
       <DependentUpon>TestPage.xaml</DependentUpon>
     </Compile>
-    <Compile Update="page\SetPage.xaml.cs">
-      <DependentUpon>SetPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -44,13 +41,16 @@
     <EmbeddedResource Update="page\MainPage3.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="page\SetPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="page\SubPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="page\TestPage.xaml">
+    <EmbeddedResource Update="page\TabbedPage1.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="page\SetPage.xaml">
+    <EmbeddedResource Update="page\TestPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

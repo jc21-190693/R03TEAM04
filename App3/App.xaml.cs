@@ -26,6 +26,7 @@ namespace App3
 }
 */
 
+using App3.page;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -53,7 +54,7 @@ namespace App3
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TabbedPage1();
         }
 
         protected override void OnStart()

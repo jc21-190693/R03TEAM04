@@ -13,10 +13,9 @@ namespace App3.page
           
         }
 
-        void OnButtonClicked(object sender, EventArgs e)
-{
-    (sender as Button).Text = "Click me again!";
-}
-      
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SetPage());
+        }
     }
 }
