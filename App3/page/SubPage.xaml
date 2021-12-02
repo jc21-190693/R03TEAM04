@@ -7,6 +7,22 @@
             <Label Text="設定"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <stackLayout Padding="32">
+                <Label x:Name="label"
+               Text="Welcom to xamarin Forms!"
+               VerticalOptions="Center"
+               horizontalOptions="Center"   />
+
+                <Button Text="Click"
+                Clicked="Button_Clicked"
+                HightRequest="80"
+                WidthRequest="200"
+                HorizontalOptions="Center"
+                VerticaiOptions="Center"    />
+
+            </stackLayout>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
