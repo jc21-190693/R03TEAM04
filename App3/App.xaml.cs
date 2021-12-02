@@ -26,6 +26,7 @@ namespace App3
 }
 */
 
+using App3.page;
 using System;
 using System.IO;
 using Xamarin.Forms;
@@ -48,6 +49,7 @@ namespace App3
             }
         }
 
+        
         public App()
         {
             InitializeComponent();
