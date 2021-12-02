@@ -54,7 +54,7 @@ namespace App3
         {
             InitializeComponent();
 
-            MainPage = new TabbedPage1();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

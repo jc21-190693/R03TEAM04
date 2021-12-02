@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace App3.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage
+    public partial class MainPage4 : ContentPage
     {
-        public TabbedPage1()
+        public MainPage4()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SetPage());
         }
     }
 }
