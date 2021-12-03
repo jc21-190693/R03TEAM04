@@ -7,7 +7,7 @@
             <Label Text="設定"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
+<!--p-->
             <stackLayout Padding="32">
                 <Label x:Name="label"
                Text="Welcom to xamarin Forms!"
