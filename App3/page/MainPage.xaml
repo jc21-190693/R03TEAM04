@@ -14,6 +14,8 @@
 
     <local:TestPage Title="テスト用" />
 
+    <local:SetPage Title="設定" />
+
 
 
 
