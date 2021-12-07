@@ -19,7 +19,7 @@ namespace NavPageSample
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new SetPage());
+            Navigation.PushAsync(new MainPage2());
 
         }
     }

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace NavPageSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SetPage : ContentPage
+    public partial class MainPage2 : ContentPage
     {
-        public SetPage()
+        public MainPage2()
         {
             InitializeComponent();
         }
