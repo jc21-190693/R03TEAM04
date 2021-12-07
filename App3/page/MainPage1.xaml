@@ -4,9 +4,15 @@
              x:Class="NavPageSample.MainPage1">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
+                <Label Text="今日飲む薬" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
+            <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
+
+
+
             <Button Text="Click Me!" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
