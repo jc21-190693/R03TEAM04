@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using App3.page;
 
 namespace App3
 {
@@ -25,7 +25,7 @@ namespace App3
         {
             // SubPageに遷移する
             //Navigation.PushAsync(new SubPage());
-            Navigation.PushAsync(new SetPage.xaml());
+            Navigation.PushAsync(new SetPage());
 
             // このようにMainPageプロパティに遷移したいページを渡すことで画面を切り替えることができる
             // この場合NavigationPageのように遷移したページをスタックしないので、前のページに戻る処理などは自前で管理する必要がある
