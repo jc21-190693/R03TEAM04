@@ -9,7 +9,11 @@
                 HorizontalOptions="CenterAndExpand" />
 
 
-            <Button Text="遷移する" Clicked="Button_Clicked" />
+            <!--
+           <Button Text="遷移する" Clicked="Button_Clicked" />
+            -->
+
+            <Button Text="遷移する"  />
 
 
         </StackLayout>
