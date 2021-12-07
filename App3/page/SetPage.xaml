@@ -4,7 +4,7 @@
              x:Class="App3.page.SetPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="設定です"
+            <Label Text="設定ですaaa"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             
