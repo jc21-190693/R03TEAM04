@@ -24,7 +24,8 @@ namespace App3
         private void Button_Clicked(object sender, EventArgs e)
         {
             // SubPageに遷移する
-            Navigation.PushAsync(new SubPage());
+            //Navigation.PushAsync(new SubPage());
+            Navigation.PushAsync(new SetPage.xaml());
 
             // このようにMainPageプロパティに遷移したいページを渡すことで画面を切り替えることができる
             // この場合NavigationPageのように遷移したページをスタックしないので、前のページに戻る処理などは自前で管理する必要がある
