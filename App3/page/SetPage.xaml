@@ -7,8 +7,11 @@
             <Label Text="設定ですaaa"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            
 
-            </StackLayout>
+
+            <Button Text="BMIを計算する" Clicked="Button_Clicked" />
+
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
