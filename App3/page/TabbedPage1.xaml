@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                        xmlns:local="clr-namespace:NavPageSample"
-             x:Class="NavPageSample.TabbedPage1">
+                        xmlns:local="clr-namespace:NavPageSample" xmlns:local1="clr-namespace:NavPageSample.page"
+            x:Class="NavPageSample.TabbedPage1">
   <!--Pages can be added as references or inline-->
     
     <NavigationPage Title="ホーム" >
         <x:Arguments>
             <local:MainPage1 Title="ホーム" />
+      
         </x:Arguments>
     </NavigationPage>
-    
+
+    <local1:MainPage3></local1:MainPage3>
+
+
+
+
+
 </TabbedPage>

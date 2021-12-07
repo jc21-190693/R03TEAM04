@@ -22,6 +22,9 @@
 		<EmbeddedResource Update="page\MainPage2.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
+		<EmbeddedResource Update="page\MainPage3.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
 		<EmbeddedResource Update="SetPage2.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
