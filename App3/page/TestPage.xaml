@@ -1,37 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-x:Class="App3.page.TestPage">
-    <ContentPage.Content>
-        <StackLayout Margin="20,35,20,20">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="App3.TestPage">
 
+    <StackLayout>
 
-            <Label Text="ダイヤモンド不愉快"
+        <Label Text="ダイヤモンド不愉快"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            
-            <Entry x:Name="nameEntry"
-               Placeholder="Enter name" />
-            <Entry x:Name="ageEntry"
-               Placeholder="Enter age" />
-            <Button Text="Add to Database"
-                Clicked="OnButtonClicked" />
 
-            <CollectionView x:Name="collectionView">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <StackLayout>
-                            <Label Text="{Binding Name}"
+        <Entry x:Name="SubjectEntry"
+    Placeholder="Enter Subject" />
+        <Entry x:Name="ContentEntry"
+    Placeholder="Contents Entry" />
 
-                               FontSize="Medium" />
-                            <Label Text="{Binding Age}"
-                               TextColor="Silver"
-                               FontSize="Small" />
-                          
+        <Button Text="データベースに追加します！"
+    Clicked="OnAddButtonClicked" />
+
+        <ListView x:Name="listview"
+     ItemTapped="TappedlistviewItem"
+     HasUnevenRows = "True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <StackLayout>
+                                <Label Text="{Binding Subject}"/>
+                                <Label Text="{Binding Content}"/>
+                                <Label Text="{Binding Date}"/>
+                            </StackLayout>
                         </StackLayout>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </StackLayout>
-    </ContentPage.Content>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView >
+    </StackLayout>
+
 </ContentPage>

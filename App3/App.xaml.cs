@@ -34,15 +34,15 @@ namespace App3
 {
     public partial class App : Application
     {
-        static Database database;
+        static NoteDatabase database;
 
-        public static Database Database
+        public static NoteDatabase Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "people.db3"));
+                    database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Note.db3"));
                 }
                 return database;
             }
