@@ -7,6 +7,19 @@
             <Label Text="設定です"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            
+            <StackLayout padding="32">
+                <Label x:Name="label"                 
+                        Text="Welcome!"
+                        Vertical options="Center"
+                        Horizontal options="Center"    />
+
+                <Button Text="Click"
+                        Clicked="Button_Clicked" 
+                        HeightRequest="80"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+            </StackLayout>
     </ContentPage.Content>
 </ContentPage>
