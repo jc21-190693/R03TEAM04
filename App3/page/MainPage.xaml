@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:local="clr-namespace:App3.page"
-             x:Class="App3.MainPage">
+            xmlns:local="clr-namespace:App3"
+            x:Class="App3.MainPage">
 
   <!--Pages can be added as references or inline-->
     <local:MainPage1 Title="ホーム" />
@@ -12,7 +12,7 @@
 
     <local:MainPage3 Title="服用履歴" />
 
-    <local:TestPage Title="テスト用" />
+    <local1:TestPage Title="テスト用" />
 
 
 
