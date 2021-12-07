@@ -25,6 +25,8 @@ namespace App3
         {
             // SubPageに遷移する
             //Navigation.PushAsync(new SubPage());
+
+            //label.Text = "Hello Xamarin.Forms World!!";?????
             Navigation.PushAsync(new SetPage());
 
             // このようにMainPageプロパティに遷移したいページを渡すことで画面を切り替えることができる
