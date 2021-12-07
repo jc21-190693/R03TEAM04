@@ -56,7 +56,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace App3
+namespace App3.page
 {
 
     public partial class TestPage : ContentPage
