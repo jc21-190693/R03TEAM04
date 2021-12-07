@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App3.page
+namespace NavPageSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SetPage : ContentPage
+    public partial class TabbedPage1 : TabbedPage
     {
-        public SetPage()
+        public TabbedPage1()
         {
             InitializeComponent();
         }

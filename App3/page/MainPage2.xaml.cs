@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App3.page
+namespace NavPageSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage2 : ContentPage
