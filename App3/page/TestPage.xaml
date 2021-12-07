@@ -10,9 +10,9 @@
                 HorizontalOptions="CenterAndExpand" />
 
         <Entry x:Name="SubjectEntry"
-    Placeholder="Enter Subject" />
+    Placeholder="文字列入力" />
         <Entry x:Name="ContentEntry"
-    Placeholder="Contents Entry" />
+    Placeholder="何か入力して" />
 
         <Button Text="データベースに追加します！"
     Clicked="OnAddButtonClicked" />
