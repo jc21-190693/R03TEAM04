@@ -9,7 +9,7 @@
                 HorizontalOptions="CenterAndExpand" />
 
 
-            <Button Text="BMIを計算する" Clicked="Button_Clicked" />
+            <Button Text="遷移する" Clicked="Button_Clicked" />
 
 
         </StackLayout>
