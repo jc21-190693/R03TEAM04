@@ -7,8 +7,20 @@
         <StackLayout>
             
             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
+                
+                <!--
                 <Button Text="設定" Clicked="Button_Clicked"  />
                 
+                
+                -->
+
+                <AbsoluteLayout>
+                    <Label Text="Welcome to Xamarin Forms!"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           <Button AbsoluteLayout.LayoutBounds="40,150,200,40" Text="ボタン"  />
+                </AbsoluteLayout> 
+             
              
             </Frame>
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
