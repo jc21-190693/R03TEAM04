@@ -13,7 +13,7 @@
 
 
 
-            <Button Text="Click Me!" Clicked="Button_Clicked" />
+            <ImageButton Source="ButtonIcon.png" Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
