@@ -23,5 +23,17 @@ namespace NavPageSample
             Navigation.PushAsync(new AlertPage());
 
         }
+
+        private void Button3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LifeStylePage());
+
+        }
+
+        private void Button4_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MedicinePage());
+
+        }
     }
 }
