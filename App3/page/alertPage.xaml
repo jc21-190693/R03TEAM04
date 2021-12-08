@@ -1,14 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NavPageSample.MainPage2"
-             Title="設定">
+             x:Class="NavPageSample.alertPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="通話設定"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text=">" Clicked="Button2_Clicked"/>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

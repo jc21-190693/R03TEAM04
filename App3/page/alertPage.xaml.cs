@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,20 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NavPageSample
+namespace NavPageSample.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage2 : ContentPage
+    public partial class alertPage : ContentPage
     {
-        public MainPage2()
+        public alertPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new alertPage());
-
         }
     }
 }
