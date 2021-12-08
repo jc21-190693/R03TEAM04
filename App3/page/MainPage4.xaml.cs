@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App3.page
+namespace NavPageSample.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage4 : ContentPage
@@ -15,11 +15,6 @@ namespace App3.page
         public MainPage4()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new SetPage());
         }
     }
 }
