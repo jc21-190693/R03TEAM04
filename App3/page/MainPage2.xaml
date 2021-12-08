@@ -5,9 +5,22 @@
              Title="設定">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="通話設定"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button Text=">" Clicked="Button2_Clicked"/>
+
+            <Label Text="生活習慣変更"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button Text=">" Clicked="Button3_Clicked"/>
+
+            <Label Text="お薬手帳"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <Button Text=">" Clicked="Button4_Clicked"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
