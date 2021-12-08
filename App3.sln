@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3.Android", "App3.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App3.iOS", "App3.iOS\App3.iOS.csproj", "{79D693EC-1DDC-428C-B7D9-1986E9BBCBAC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App3", "App3\App3.csproj", "{66D459A6-A668-4492-88DD-B2AD90A23DCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NavPageSample", "App3\NavPageSample.csproj", "{66D459A6-A668-4492-88DD-B2AD90A23DCD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5EBC9249-4614-4A8D-ABC3-6D2406D25762}"
 	ProjectSection(SolutionItems) = preProject
