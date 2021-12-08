@@ -4,18 +4,29 @@
              x:Class="App3.page.SetPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="設定ですaaa"
+            <Label Text="設定です"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
+            <StackLayout Orientation="Horizontal">
+                <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
+                    WidthRequest="100" HeightRequest="60"   />
 
-            <!--
-           <Button Text="遷移する" Clicked="Button_Clicked" />
-            -->
+                <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
+                    WidthRequest="100" HeightRequest="60"   />
 
+                <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
+                    WidthRequest="100" HeightRequest="60"   />
+
+                <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
+                    WidthRequest="100" HeightRequest="60"   />
+
+                <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
+                    WidthRequest="100" HeightRequest="60"   />
+
+
+                </StackLayout>
             <Button Text="遷移する"  />
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
