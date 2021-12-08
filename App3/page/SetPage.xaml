@@ -10,7 +10,7 @@
 
             <StackLayout Orientation="Horizontal">
                 
-         
+        <!--
                 <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
                     WidthRequest="100" HeightRequest="60"   />
 
@@ -25,6 +25,8 @@
 
                 <Button VerticaOoptions="Start" Text="ボタン" HorizontalOptions="Start"
                     WidthRequest="100" HeightRequest="60"   />
+                
+                -->
 
             </StackLayout>
             <Button Text="遷移する"  />
