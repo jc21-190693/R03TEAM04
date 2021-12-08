@@ -10,17 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace NavPageSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage1 : ContentPage
+    public partial class TabbedPage1 : TabbedPage
     {
-        public MainPage1()
+        public TabbedPage1()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage2());
-
         }
     }
 }

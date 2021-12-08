@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App3.page.MainPage1">
+             x:Class="NavPageSample.MainPage1">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
+                <Label Text="今日飲む薬" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
+            <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
 
-    <StackLayout>
-        <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
-            <Label Text="今日飲む薬" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
 
 
-        <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
-    
-        <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
-
-        
-
-    </StackLayout>
-
+            <Button Text="Click Me!" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
