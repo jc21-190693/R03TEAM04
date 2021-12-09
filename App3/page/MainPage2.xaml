@@ -5,11 +5,9 @@
              Title="設定">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal" Spacing="0">
-                <Label Text="通話設定" FontSize="30" Padding="10" />
-
-
-            <Button  Text=">"   FontSize="30" Clicked="Button2_Clicked"/>
+            <StackLayout Orientation="Horizontal" Spacing="0" >
+                <Label Text="通知設定" FontSize="30" Padding="10"  VerticalOptions="Center" />
+                <Button  Text=">"   FontSize="30" Clicked="Button2_Clicked"  VerticalOptions="Center"/>
            </StackLayout>
 
 
