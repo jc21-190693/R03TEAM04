@@ -13,14 +13,13 @@
                 
                 -->
 
-                <Button Text="設定"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="Center"
-                Command="{Binding DivideBy2Command}" 
-                         Clicked="Button_Clicked"
-                        
-                        />
 
+                <ImageButton Source="XamarinLogo.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+
+
+           
 
 
                 
