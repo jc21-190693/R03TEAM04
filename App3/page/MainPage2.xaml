@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="0">
-                <Label Text="通話設定" FontSize="30"  />
+                <Label Text="通話設定" FontSize="30" Padding="10" />
 
 
             <Button  Text=">"   FontSize="30" Clicked="Button2_Clicked"/>
@@ -15,12 +15,12 @@
 
 
             <StackLayout  Orientation="Horizontal" Spacing="0">
-                <Label Text="生活習慣変更"  FontSize="30" />
+                <Label Text="生活習慣変更"  FontSize="30" Padding="10" />
                 <Button Text=">"    FontSize="30" Clicked="Button3_Clicked"/>
                   </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="0">
-            <Label Text="お薬手帳" FontSize="30" />
+                <Label Text="お薬手帳" FontSize="30"  Padding="10" />
                 <Button Text=">"   FontSize="30" Clicked="Button4_Clicked"/>
              </StackLayout>
 
