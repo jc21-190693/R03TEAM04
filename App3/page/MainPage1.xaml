@@ -16,7 +16,12 @@
                 
                 
               <StackLayout Margin="20,35,20,20">
-                <Button Text="設定" Clicked="Button_Clicked"  />
+                <Button Text="設定" 
+                         VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Command="{Binding MultiplyBy2Command}"
+                        Clicked="Button_Clicked"  />
+                  
         </StackLayout>
 
 
