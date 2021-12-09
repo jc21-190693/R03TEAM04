@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
+using App3.Models;
 
-namespace App3
+namespace App3.Data
 {
     public class NoteDatabase
     {

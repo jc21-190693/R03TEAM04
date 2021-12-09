@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using SQLite;
 
-namespace App3
+namespace App3.Models
 {
     public class Note
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string Subject { get; set; }
-        public string Content { get; set; }
+        public string Text { get; set; }
         public DateTime Date { get; set; }
     }
 }
