@@ -14,7 +14,7 @@
                 -->
 
 
-                <ImageButton Source="XamarinLogo.png"
+                <ImageButton Source="歯車.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand" />
 
