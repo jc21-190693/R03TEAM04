@@ -13,16 +13,20 @@
                 
                 -->
 
-                
-                
-              <StackLayout Margin="20,35,20,20">
-                <Button Text="設定" 
-                         VerticalOptions="CenterAndExpand"
+                <Button Text="設定"
+                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                Command="{Binding MultiplyBy2Command}"
-                        Clicked="Button_Clicked"  />
-                  
-        </StackLayout>
+                Command="{Binding DivideBy2Command}" 
+                         Clicked="Button_Clicked"
+                        
+                        />
+
+
+
+                
+                
+                
+
 
 
             </Frame>
