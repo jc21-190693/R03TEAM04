@@ -1,16 +1,23 @@
-﻿
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
-namespace App3
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+
+namespace NavPageSample
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage : TabbedPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+            
         }
+       
     }
 
 }

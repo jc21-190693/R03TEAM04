@@ -1,39 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="App3.page.TestPage">
-
-    <StackLayout>
-
-        <Label Text="ダイヤモンド不愉快"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-        <Entry x:Name="SubjectEntry"
-    Placeholder="文字列入力" />
-        <Entry x:Name="ContentEntry"
-    Placeholder="何か入力して" />
-
-        <Button Text="データベースに追加します！"
-    Clicked="OnAddButtonClicked" />
-
-        <ListView x:Name="listview"
-     ItemTapped="TappedlistviewItem"
-     HasUnevenRows = "True">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal">
-                            <StackLayout>
-                                <Label Text="{Binding Subject}"/>
-                                <Label Text="{Binding Content}"/>
-                                <Label Text="{Binding Date}"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView >
-    </StackLayout>
-
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NavPageSample.page.TestPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
+                <Label Text="テスト用" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

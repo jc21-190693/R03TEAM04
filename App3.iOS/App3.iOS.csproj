@@ -75,6 +75,12 @@
     <ITunesArtwork Include="iTunesArtwork%402x" />
   </ItemGroup>
   <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\ButtonIcon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\ButtonIcon.imageset\sozai_cman_jp_20211208103852.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Testicons.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -193,9 +199,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\App3\App3.csproj">
-      <Project>{D1A4552C-C876-4D06-BFD5-15B5CC5EC063}</Project>
-      <Name>App3</Name>
+    <ProjectReference Include="..\App3\NavPageSample.csproj">
+      <Project>{66D459A6-A668-4492-88DD-B2AD90A23DCD}</Project>
+      <Name>NavPageSample</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -7,20 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NavPageSample
+namespace App3.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MainPage1 : ContentPage
+    public partial class SetPage : ContentPage
     {
-        public MainPage1()
+        public SetPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MainPage2());
-
         }
     }
 }

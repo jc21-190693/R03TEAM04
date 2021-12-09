@@ -4,7 +4,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace App3.iOS
+namespace NavPageSample.iOS
 {
     public class Application
     {
