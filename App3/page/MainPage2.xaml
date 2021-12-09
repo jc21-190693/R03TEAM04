@@ -5,22 +5,24 @@
              Title="設定">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="通話設定"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text=">" Clicked="Button2_Clicked"/>
-
-            <Label Text="生活習慣変更"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text=">" Clicked="Button3_Clicked"/>
-
-            <Label Text="お薬手帳"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
-            <Button Text=">" Clicked="Button4_Clicked"/>
+            <StackLayout Orientation="Horizontal" Spacing="0" Margin="20,50,10,10" >
+                <Label Text="通知設定" FontSize="30" Padding="10"   />
+                <Button  Text=">"   FontSize="30" Clicked="Button2_Clicked"  VerticalOptions="Center"/>
+           </StackLayout>
 
 
-        </StackLayout>
+
+            <StackLayout  Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10">
+                <Label Text="生活習慣変更"  FontSize="30" Padding="10" />
+                <Button Text=">"    FontSize="30" Clicked="Button3_Clicked"/>
+                  </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10">
+                <Label Text="お薬手帳" FontSize="30"  Padding="10" />
+                <Button Text=">"   FontSize="30" Clicked="Button4_Clicked"/>
+             </StackLayout>
+
+       
+             </StackLayout>
     </ContentPage.Content>
 </ContentPage>
