@@ -16,7 +16,7 @@
                 
                 
               <StackLayout Margin="20,35,20,20">
-       <Button Text="Click me" />
+                <Button Text="設定" Clicked="Button_Clicked"  />
         </StackLayout>
 
 
