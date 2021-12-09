@@ -4,23 +4,33 @@
              x:Class="NavPageSample.MainPage2"
              Title="設定">
     <ContentPage.Content>
-        <StackLayout>
+         <StackLayout>
+        <StackLayout  Orientation="Horizontal">
             <Label Text="通話設定"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
-            <Button Text=">" Clicked="Button2_Clicked"/>
 
+
+            <Button  Text=">" Clicked="Button2_Clicked"/>
+           </StackLayout>
+            
+
+
+             <StackLayout  Orientation="Horizontal">
             <Label Text="生活習慣変更"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <Button Text=">" Clicked="Button3_Clicked"/>
+                  </StackLayout>
 
+            <StackLayout Orientation="Horizontal">
             <Label Text="お薬手帳"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
             <Button Text=">" Clicked="Button4_Clicked"/>
+             </StackLayout>
 
-
-        </StackLayout>
+       
+             </StackLayout>
     </ContentPage.Content>
 </ContentPage>
