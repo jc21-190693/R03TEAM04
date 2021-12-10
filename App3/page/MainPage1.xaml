@@ -5,27 +5,29 @@
              Title="今日飲む薬">
     <ContentPage.Content>
         <StackLayout>
-            
-           
-                
+                        
                 <!--
-                 <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
-                
-                
+                 <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">              
                 <Button Text="設定" Clicked="Button_Clicked"  />
                  </Frame>
                 -->
 
-
             <ImageButton Source="gear.png"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" />
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="Button_Clicked"     
+                         />
 
-
-           
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
+            <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
+                <Button Text="バファリン\n7:00" Clicked="Button_Clicked"  />
+            </Frame>
+
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
-         
+            <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
+                <Button Text="タミフル\n7:00" Clicked="Button_Clicked"  />
+            </Frame>
+                  
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
