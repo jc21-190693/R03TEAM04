@@ -20,12 +20,12 @@
 
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
-                <Button Text="バファリン\n7:00" Clicked="Button_Clicked"  />
+                <Button Text="バファリン\t7:00" Clicked="Button_Clicked"  />
             </Frame>
 
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
-                <Button Text="タミフル\n7:00" Clicked="Button_Clicked"  />
+                <Button Text="タミフル\t7:00" Clicked="Button_Clicked"  />
             </Frame>
                   
         </StackLayout>
