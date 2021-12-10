@@ -1,9 +1,9 @@
 using System;
 using System.IO;
-using App3.Data;
+using App3;
 using Xamarin.Forms;
 
-namespace App3
+namespace NavPageSample
 {
     public partial class App : Application
     {
@@ -25,7 +25,7 @@ namespace App3
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell();
+            MainPage = new TabbedPage();
         }
 
         protected override void OnStart()

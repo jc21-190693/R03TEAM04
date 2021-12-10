@@ -1,7 +1,7 @@
 ﻿using System;
 using SQLite;
 
-namespace App3.Models
+namespace NavPageSample
 {
     public class Note
     {
