@@ -25,10 +25,29 @@
            
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
-
+            
+           <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
            
-
-
+            
+            <Grid Grid.Row="1" Grid.Column="1" BackgroundColor="#2200ffff"
+          RowSpacing="10" Padding="10">
+      <Grid.Resources>
+        <ResourceDictionary>
+          <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="Yellow" />
+            <Setter Property="OutlineColor" Value="Blue" />
+          </Style>
+          <Style TargetType="Label">
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="TextColor" Value="Black" />
+          </Style>
+        </ResourceDictionary>
+      </Grid.Resources>
+            
+            
+             <!--aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
