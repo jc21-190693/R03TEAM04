@@ -1,3 +1,4 @@
+
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -6,6 +7,7 @@ namespace NavPageSample
 {
     public partial class App : Application
     {
+
         public App()
         {
             InitializeComponent();
@@ -24,5 +26,7 @@ namespace NavPageSample
         protected override void OnResume()
         {
         }
+
     }
+
 }

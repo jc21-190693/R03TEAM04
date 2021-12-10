@@ -1,23 +1,20 @@
-
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace NavPageSample
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class AlertPage : ContentPage
     {
-        public MainPage()
+        public AlertPage()
         {
             InitializeComponent();
-            
         }
-       
     }
-
 }
