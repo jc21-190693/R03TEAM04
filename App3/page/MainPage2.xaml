@@ -8,7 +8,7 @@
         <StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="0" Margin="20,50,10,10" >
                
-               <Image Source="Assets/set.png " />
+               <Image Source="Assets/Icon40.png " />
                 <Button   Text="通知設定　　　　>"   FontSize="30" Clicked="Button2_Clicked"  VerticalOptions="Center"/>
            </StackLayout>
 
