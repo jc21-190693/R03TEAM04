@@ -4,6 +4,7 @@ using App3;
 using Xamarin.Forms;
 using NavPageSample.page;
 
+
 namespace NavPageSample
 {
     public partial class App : Application
@@ -26,6 +27,7 @@ namespace NavPageSample
         {
             InitializeComponent();
             MainPage = new TabbedPage();
+
         }
 
         protected override void OnStart()
