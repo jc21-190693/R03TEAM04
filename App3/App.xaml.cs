@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using App3;
 using Xamarin.Forms;
 using NavPageSample.page;
 
@@ -24,8 +25,7 @@ namespace NavPageSample
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new TabbedPage();
         }
 
         protected override void OnStart()
