@@ -10,17 +10,27 @@
                  <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">              
                 <Button Text="設定" Clicked="Button_Clicked"  />
                  </Frame>
-                -->
-
-             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
-                <Button Text="設定" Clicked="Button_Clicked"  />
-            </Frame>
-                
             
-
+            
             <ImageButton Source="Resources/gear.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
+            
+            
+            
+            
+            
+            
+            <Button>
+   <Button.Background>
+     <ImageBrush ImageSource="/AssemblyName;component/Pictures/img.jpg"/>
+   </Button.Background>
+   <TextBlock>Blablabla</TextBlock>
+</Button>
+                -->
+            
+
+            
                          
                          />
 
