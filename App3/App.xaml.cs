@@ -26,7 +26,7 @@ namespace NavPageSample
         public App()
         {
             InitializeComponent();
-            MainPage = new TabbedPage();
+            MainPage = new TabbedPage1();
 
         }
 
