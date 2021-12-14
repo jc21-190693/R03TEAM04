@@ -79,6 +79,7 @@
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Assets.xcassets\ButtonIcon.imageset\sozai_cman_jp_20211208103852.png">
+
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Testicons.xcassets\AppIcons.appiconset\Contents.json">
