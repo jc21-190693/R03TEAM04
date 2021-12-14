@@ -1,22 +1,21 @@
 using System;
 using System.IO;
-using App3.Data;
 using Xamarin.Forms;
+using NavPageSample.page;
 
-namespace App3
+namespace NavPageSample
 {
     public partial class App : Application
     {
         static NoteDatabase database;
 
-        // Create the database connection as a singleton.
         public static NoteDatabase Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
+                    database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "people.db3"));
                 }
                 return database;
             }
@@ -25,19 +24,23 @@ namespace App3
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell();
+
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
+            // Handle when your app starts
         }
 
         protected override void OnSleep()
         {
+            // Handle when your app sleeps
         }
 
         protected override void OnResume()
         {
+            // Handle when your app resumes
         }
     }
 }
