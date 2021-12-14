@@ -29,17 +29,20 @@
 </Button>
               />
             
+            
+            
+ 
+            
+            
+            
                 -->
 
 
-            <Button>
-                <Button.Background>
-                    <ImageBrush ImageSource="/AssemblyName;component/Pictures/img.jpg"/>
-                </Button.Background>
-                <TextBlock>Blablabla</TextBlock>
-            </Button>
-            />
-
+            <ImageButton Source="Resources/gear.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+            
+            
 
 
 
