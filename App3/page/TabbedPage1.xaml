@@ -17,11 +17,7 @@
     <local1:MainPage4 Title="服用履歴"></local1:MainPage4>
     <local1:TestPage Title="テスト用"></local1:TestPage>
 
-    <NavigationPage>
-        <x:Arguments>
-            <local:MainPage2/>
-        </x:Arguments>
-    </NavigationPage>
+    
 
 
 
