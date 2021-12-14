@@ -17,13 +17,13 @@
             </Frame>
                 
             
-            <!-- 
+
             <ImageButton Source="gear.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
                     Clicked="Button_Clicked"     
                          />
-            -->
+
 
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
             <!--
