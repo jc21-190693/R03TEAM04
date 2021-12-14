@@ -18,10 +18,10 @@
                 
             
 
-            <ImageButton Source="page/gear.png"
+            <Image Source="page/gear.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"
-                    Clicked="Button_Clicked"     
+                         
                          />
 
 

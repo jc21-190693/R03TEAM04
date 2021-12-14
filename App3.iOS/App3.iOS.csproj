@@ -207,4 +207,7 @@
   <ItemGroup>
     <Folder Include="Icons\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gear.png" />
+  </ItemGroup>
 </Project>
