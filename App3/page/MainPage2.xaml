@@ -8,8 +8,8 @@
         <StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="0" Margin="20,50,10,10" >
                
-             <Label  Text="通知設定" FontSize="30" Padding="10"   />   
-            <Button   Text=">"   FontSize="30" Clicked="Button2_Clicked" />
+               
+            <Button  Text="通知設定"　 TextColor ="black"  Text=">"  TextColor ="blue" FontSize="30" Clicked="Button2_Clicked" />
            </StackLayout>
 
 
