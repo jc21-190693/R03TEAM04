@@ -20,7 +20,7 @@
                   </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10">
-                <Label Text="お薬手帳" FontSize="30"  Padding="10" />
+                <Label Text="お薬手帳          >" FontSize="30"  Padding="10" />
                 <Button Text=">"   FontSize="30" Clicked="Button4_Clicked"/>
              </StackLayout>
 
