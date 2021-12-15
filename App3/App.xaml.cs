@@ -15,7 +15,7 @@ namespace NavPageSample
         {
             get
             {
-                if (database == null)
+                if (database == null)                                                                                                   //DBƒtƒ@ƒCƒ‹–¼
                 {
                     database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "people.db3"));
                 }

@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using SQLite;
 using App3;
 
+//データベースアクセスのクラス
 namespace NavPageSample
 {
     public class NoteDatabase
