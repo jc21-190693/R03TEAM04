@@ -12,17 +12,20 @@
                  </Frame>
             
             
-                <ImageButton Source="Resources/gear.png"
-                        HorizontalOptions="Center"
-                        VerticalOptions="CenterAndExpand"
-                />   
+               
+              <ImageButton Source="Resources/gear.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"></ImageButton>
+            
                 -->
 
             
 
-            <ImageButton Source="Resources/gear.png"
-                    HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"></ImageButton>
+           <ImageButton Source="Resources/gear.png"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                />   
+            
             
             
 
