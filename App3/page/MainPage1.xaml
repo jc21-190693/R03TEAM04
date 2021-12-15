@@ -18,6 +18,7 @@
                 />   
                 -->
 
+            
 
             <ImageButton Source="Resources/gear.png"
                     HorizontalOptions="Center"
