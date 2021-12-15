@@ -19,15 +19,15 @@
             
                 -->
 
-            
 
-           <ImageButton Source="Resources/gear.png"
-                        HorizontalOptions="Center"
-                        VerticalOptions="CenterAndExpand"
-                />   
-            
-            
-            
+
+
+
+            <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
+                <Button Text="設定" Clicked="Button_Clicked"  />
+            </Frame>
+
+
 
 
 
