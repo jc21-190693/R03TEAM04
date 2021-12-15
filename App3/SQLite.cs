@@ -15,6 +15,7 @@ namespace NavPageSample
         //user_id、PK
         [PrimaryKey,AutoIncrement,Column("user_id")]
         [NotNull]
+        //[unique]
         public int u_id { get;  set; }
 
         //性別血液型など
