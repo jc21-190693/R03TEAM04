@@ -16,16 +16,16 @@ namespace NavPageSample
             _database.CreateTableAsync<User>().Wait();
         }
 
-        public Task<List<Person>> GetPeopleAsync()
+        public Task<List<User>> GetUserAsync()
         {   
             //personを取得
-            return _database.Table<Person>().ToListAsync();
+            return _database.Table<User>().ToListAsync();
         }
 
-        public Task<Person> GetPeopleAsync(int id)
+        public Task<User> GetUserAsync(int id)
         {
-            // Get a specific person.
-            return database.Table<Person>().Where(i => i.ID == id).FirstOrDefaultAsync();
+            // Get a specific person.                   //テーブルで定義したidなど
+            return _database.Table<User>().Where(i => i.user_id == id).FirstOrDefaultAsync();
         }
 
         public Task<int> SavePersonAsync(Person person)
