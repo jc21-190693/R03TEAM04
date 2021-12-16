@@ -22,25 +22,17 @@
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand" 
                     Padding="24" CornerRadius="0"
-                           Clicked="Button_Clicked" >              
-                         
-                           />
+                           Clicked="Button_Clicked" >   />
              </ImageButton>
             
                 -->
 
 
-            <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
+
+
+            <ImageButton Source="Resources/gear.png"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" 
-                    Padding="24" CornerRadius="0"
-                           Clicked="Button_Clicked" >
-
-                
-            </ImageButton>
-
-
-
+                    VerticalOptions="CenterAndExpand"></ImageButton>
 
 
 
