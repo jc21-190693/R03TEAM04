@@ -12,7 +12,9 @@ namespace NavPageSample
 
         public NoteDatabase(string dbPath)
         {
+            //DBの作成コネクションクラスコンストラクタのパスを渡す
             _database = new SQLiteAsyncConnection(dbPath);
+            //空のＤＢを作成
             _database.CreateTableAsync<Note>().Wait();
         }
 

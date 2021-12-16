@@ -9,15 +9,15 @@ namespace NavPageSample
 {
     public partial class App : Application
     {
-        static NoteDatabase database;
+        static Database database;
 
-        public static NoteDatabase Database
+        public static Database Database
         {
             get
             {
                 if (database == null)                                                                                                   //DBƒtƒ@ƒCƒ‹–¼
                 {
-                    database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "people.db3"));
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "R03TEAM04.db"));
                 }
                 return database;
             }

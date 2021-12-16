@@ -9,18 +9,18 @@ namespace NavPageSample
     {
 
     }
-    [Table("mst_User")]
+
+    /*表(スキーマ)の定義*/
     public class User
     {
         //user_id、PK
         [PrimaryKey,AutoIncrement,Column("user_id")]
-        [NotNull]
         //[unique]
-        public int u_id { get;  set; }
+        public int user_id { get;  set; }
 
         //性別血液型など
         [NotNull]
-        public DateTime date_of_birth { get; set; }
+        public DateTimeOffset date_of_birth { get; set; }
         [NotNull]
         public string  sex { get; set; }
         [NotNull]
@@ -34,47 +34,40 @@ namespace NavPageSample
 
         //ご飯食べるタイミングなど
         [NotNull]
-        public DateTime day_breakfast { get; set; }
+        public DateTimeOffset day_breakfast { get; set; }
         [NotNull]
-        public DateTime Clockin_time { get; set; }
+        public DateTimeOffset Clockin_time { get; set; }
         [NotNull]
-        public DateTime day_lunch { get; set; }
+        public DateTimeOffset day_lunch { get; set; }
         [NotNull]
-        public DateTime end_breakfast { get; set; }
+        public DateTimeOffset end_breakfast { get; set; }
         [NotNull]
-        public DateTime end_lunch { get; set; }
+        public DateTimeOffset end_lunch { get; set; }
     }
 
-    [Table("mst_medicine")]
     public class Medicine
     {
         //medicine_id、ｐｋ
         [PrimaryKey,AutoIncrement,Column("medicine_id")]
-        [NotNull]
         public int medicine_id { get; set; }
         [NotNull]
         public string medicine_name { get; set; }
         public string url { get; set; }
     }
 
-    [Table("mst_Allergie")]
     public class Allergie
     {
         [PrimaryKey, AutoIncrement, Column("user_id")]
-        [NotNull]
-        public int u_id { get; set; }
+        public int user_id { get; set; }
         [NotNull]
         public string allergie { get; set; }
     }
 
-    [Table("mst_take_medicine")]
     public class TakeMedicine
     {
         [PrimaryKey, AutoIncrement, Column("user_id")]
-        [NotNull]
-        public int u_id { get; set; }
+        public int user_id { get; set; }
         [PrimaryKey, AutoIncrement, Column("medicine_id")]
-        [NotNull]
         public int medicine_id { get; set; }
         [NotNull]
         public string taking_history { get; set; }
@@ -82,4 +75,15 @@ namespace NavPageSample
         public int quantity { get; set; }
         public string side_effect { get; set; }
     }
+
+    public class TakeTime
+    {
+        [PrimaryKey,AutoIncrement,Column("user_id")]
+        public int use_id { get; set; }
+        [PrimaryKey, AutoIncrement, Column("medicine_id")]
+        public int medicine_id { get; set; }
+        [NotNull]
+        public DateTimeOffset medicine_time { get; set; }
+    }
+
 }
