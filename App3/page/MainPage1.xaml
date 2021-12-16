@@ -17,23 +17,33 @@
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand"></ImageButton>      
             
+            
+             <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" 
+                    Padding="24" CornerRadius="0"
+                           Clicked="Button_Clicked" >              
+                         
+                           />
+             </ImageButton>
+            
                 -->
 
 
-              <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
+            <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand" 
-                    Padding="24" CornerRadius="0">              
-                         
-                           />
+                    Padding="24" CornerRadius="0"
+                           Clicked="Button_Clicked" >
+
+                
             </ImageButton>
-            
-            
-            
-            
-            
-            
-            
+
+
+
+
+
+
 
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
                 <!--
