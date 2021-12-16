@@ -6,14 +6,14 @@
              Title="設定">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal"  Margin="20,50,10,10" >  
-            <Button Text="通知設定          >" TextColor ="black" FontSize="30" Clicked="Button2_Clicked" />
+            <StackLayout Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10" >  
+            <Button Text="通知設定          >"  FontSize="30" Clicked="Button2_Clicked" VerticalOptions="Center" />
            </StackLayout>
 
 
 
-            <StackLayout  Orientation="Horizontal"  Margin="20,50,10,10">
-                <Button Text="生活習慣変更      >" TextColor ="black"FontSize="30" Clicked="Button3_Clicked"/>
+            <StackLayout  Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10">
+              <Button Text="生活習慣        >"  FontSize="30" Clicked="Button3_Clicked" VerticalOptions="Center" />
                   </StackLayout>
 
           
