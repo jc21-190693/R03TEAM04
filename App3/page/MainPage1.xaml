@@ -15,7 +15,8 @@
                
               <ImageButton Source="Resources/gear.png"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"></ImageButton>         
+                    VerticalOptions="CenterAndExpand"></ImageButton>      
+            
                 -->
 
 
