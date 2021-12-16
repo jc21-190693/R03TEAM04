@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace NavPageSample.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MedicinePage : ContentView
+    public partial class MedicinePage : ContentPage
     {
         public MedicinePage()
         {
