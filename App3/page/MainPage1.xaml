@@ -15,26 +15,28 @@
                
               <ImageButton Source="Resources/gear.png"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand"></ImageButton>
-            
+                    VerticalOptions="CenterAndExpand"></ImageButton>         
                 -->
 
 
-
-
-
-
-
-
+              <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+            
+            
+            
+            
+            
+            
+            
+            
 
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
                 <!--
             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
                 <Button Text="バファリン\t7:00" Clicked="Button_Clicked"  />
-            </Frame>
-            
+            </Frame>          
             -->
-
                 <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
                 <!--
             <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">
