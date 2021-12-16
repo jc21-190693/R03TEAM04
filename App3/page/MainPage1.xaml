@@ -21,8 +21,11 @@
 
               <ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
                     HorizontalOptions="Center"
-                    VerticalOptions="CenterAndExpand" />
-            
+                    VerticalOptions="CenterAndExpand" 
+                    Padding="24" CornerRadius="0">              
+                         
+                           />
+            </ImageButton>
             
             
             
