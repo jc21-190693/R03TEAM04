@@ -15,7 +15,7 @@
            
 
             
-             <Button Text="Bottom " ContentLayout="Bottom,0" Image="btnicon"  HorizontalOptions="Start" />
+             <Button Text="Bottom " ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" />
             
            
 
