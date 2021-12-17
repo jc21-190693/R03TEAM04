@@ -17,7 +17,7 @@ namespace NavPageSample.page
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void Button4_Clicked(object sender, EventArgs e)
         {
 
                 ZXing.Mobile.MobileBarcodeScanner scanner = new ZXing.Mobile.MobileBarcodeScanner();
