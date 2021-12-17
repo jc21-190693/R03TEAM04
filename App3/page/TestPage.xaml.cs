@@ -27,7 +27,7 @@ namespace NavPageSample.page
 
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(SubjectEntry.Text) && !string.IsNullOrWhiteSpace(ContentEntry.Text))
+            if (!string.IsNullOrWhiteSpace(Birth_Entry.Text) && !string.IsNullOrWhiteSpace(Tabako_Entry.Text))
             {
 
                 //Userテーブルにデータを入力してもらう。(アンケート？？？)
