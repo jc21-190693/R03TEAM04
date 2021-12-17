@@ -50,7 +50,7 @@
                 <Button Text="タミフル\t7:00" Clicked="Button_Clicked"  />
             </Frame>
             -->
-
+<!--
         </StackLayout>
     </ContentPage.Content>
 </ContentPage><?xml version="1.0" encoding="utf-8" ?>
@@ -60,7 +60,7 @@
              Title="今日飲む薬">
     <ContentPage.Content>
         <StackLayout>
-
+-->
             <!--
                  <Frame BackgroundColor="#abc555" Padding="24" CornerRadius="0">              
                 <Button Text="設定" Clicked="Button_Clicked"  />
