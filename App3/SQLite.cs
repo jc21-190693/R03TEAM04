@@ -24,11 +24,15 @@ namespace NavPageSample
         [NotNull]
         public string  sex { get; set; }
         [NotNull]
-        public string BloodType { get; set; }
+        public string boodType { get; set; }
+        [NotNull]
+        public int height { get; set; }
+        [NotNull]
+        public  int weight { get; set; }
         [NotNull]
         public string tabako { get; set; }
         [NotNull]
-        public string Drinking { get; set; }
+        public string drinking { get; set; }
         [NotNull]
         public string taking_history { get; set; }
 
@@ -36,7 +40,7 @@ namespace NavPageSample
         [NotNull]
         public DateTimeOffset day_breakfast { get; set; }
         [NotNull]
-        public DateTimeOffset Clockin_time { get; set; }
+        public DateTimeOffset clockin_time { get; set; }
         [NotNull]
         public DateTimeOffset day_lunch { get; set; }
         [NotNull]

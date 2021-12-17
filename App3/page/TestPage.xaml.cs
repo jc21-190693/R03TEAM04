@@ -22,22 +22,40 @@ namespace NavPageSample.page
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            listview.ItemsSource = await App.Database.GetNotesAsync();
+            listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(SubjectEntry.Text) && !string.IsNullOrWhiteSpace(ContentEntry.Text))
             {
-                await App.Database.SaveNoteAsync(new Note
+
+                //Userテーブルにデータを入力してもらう。(アンケート？？？)
+                await App.Database.SaveUserAsync(new User
                 {
-                    Subject = SubjectEntry.Text,
-                    Content = ContentEntry.Text,
-                    Date = DateTime.Now
+                    date_of_birth = Birth_Entry,
+                    sex = Sex_Entry,
+                    boodType = BloodType_Entry,
+                    height = Height_Entry,
+                    weight = Weight_Entry,
+                    tabako = Tabako_Entry,
+                    drinking = Drinking_Entry,
+                    //allergy = Allegry_Entry,
+                    taking_history = Taking_History_Entry,
+
+                    //平日の
+                    day_breakfast = Day_Breakfast_Entry,
+                    day_lunch = Day_lunch_Entry,
+                    clockin_time = Clockin_Time_Entry,
+
+                    //休日
+                    end_breakfast = End_Breakfast_Entry,
+                    end_lunch = End_Lunch_Entry
+
                 });
 
                 SubjectEntry.Text = ContentEntry.Text = string.Empty;
-                listview.ItemsSource = await App.Database.GetNotesAsync();
+                listview.ItemsSource = await App.Database.GetUsersAsync();
             }
         }
 
@@ -50,8 +68,8 @@ namespace NavPageSample.page
             {
                 if (action == "データの削除")
                 {
-                    await App.Database.DeleteNoteAsync(item);
-                    listview.ItemsSource = await App.Database.GetNotesAsync();
+                    await App.Database.DeleteUserAsync(item);
+                    listview.ItemsSource = await App.Database.GetUsersAsync();
                 }
                 else if (action == "データの更新")
                 {
@@ -60,9 +78,9 @@ namespace NavPageSample.page
                         item.Subject = SubjectEntry.Text;
                         item.Content = ContentEntry.Text;
                         item.Date = DateTime.Now;
-                        await App.Database.SaveNoteAsync(item);
+                        await App.Database.SaveUserAsync(item);
                         SubjectEntry.Text = ContentEntry.Text = string.Empty;
-                        listview.ItemsSource = await App.Database.GetNotesAsync();
+                        listview.ItemsSource = await App.Database.GetUsersAsync();
                     }
                     else
                     {

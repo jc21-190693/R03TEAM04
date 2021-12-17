@@ -16,36 +16,36 @@ namespace NavPageSample
             _database.CreateTableAsync<User>().Wait();
         }
 
-        public Task<List<User>> GetUserAsync()
+        public Task<List<User>> GetUsersAsync()
         {   
-            //personを取得
+            //userを取得
             return _database.Table<User>().ToListAsync();
         }
 
         public Task<User> GetUserAsync(int id)
         {
-            // Get a specific person.                   //テーブルで定義したidなど
+            // Get a specific user.                   //テーブルで定義したidなど
             return _database.Table<User>().Where(i => i.user_id == id).FirstOrDefaultAsync();
         }
 
-        public Task<int> SavePersonAsync(Person person)
+        public Task<int> SaveUserAsync(User user)
         {   
             //
-            if (person.ID != 0)
+            if (user.user_id != 0)
             {
-                // Update an existing note.
-                return database.UpdateAsync(person);
+                // Update an existing user.
+                return _database.UpdateAsync(user);
             }
             else
             {
-                //personインサート
-                return database.InsertAsync(person);
+                //userインサート
+                return _database.InsertAsync(user);
             }
         }
-        public Task<int> DeletePeopleAsync(Person person)
+        public Task<int> DeleteUserAsync(User user)
         {
-            //person削除.
-            return database.DeleteAsync(person);
+            //user削除.
+            return _database.DeleteAsync(user);
         }
 
     }
