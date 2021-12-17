@@ -25,14 +25,21 @@
                            Clicked="Button_Clicked" >   />
              </ImageButton>
             
-                -->
-
             
-                <Label Text="ImageButton"
+            
+             <Label Text="ImageButton"
                FontSize="50"
                FontAttributes="Bold"
-               HorizontalOptions="Center" />
+               HorizontalOptions="Center" 
+                       
+                       />
+                -->
 
+
+            <<Frame ImageButton Source="C:\Users\190455\Source\Repos\R03TEAM04\App3.Android\Resources\mipmap-xxxhdpi\icon.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand" />
+                </Frame>
 
 
 
