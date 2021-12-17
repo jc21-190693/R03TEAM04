@@ -88,14 +88,7 @@
                      />
                 -->
 
-           
-
-            
-            
-
-
-
-            <Button  ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" 
+            <Button Text="Bottom " ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" 
                       Clicked="Button_Clicked"
                      />
 
