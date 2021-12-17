@@ -12,18 +12,12 @@
                  </Frame>          
                 -->
 
+           
+
             
-
-
-            <Image>
-                <Image.Source>
-                    <FileImageSource File="Resources/gear.png" />
-                </Image.Source>
-            </Image>
-
-
-
-
+             <Button Text="Bottom " ContentLayout="Bottom,0" Image="btnicon"  HorizontalOptions="Start" />
+            
+           
 
 
 
