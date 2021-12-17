@@ -30,10 +30,6 @@ namespace NavPageSample
 
         }
 
-        private void Button4_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new MedicinePage());
-
-        }
+      
     }
 }
