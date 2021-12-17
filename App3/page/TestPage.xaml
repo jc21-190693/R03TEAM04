@@ -26,7 +26,7 @@
         <Entry x:Name="Allegry_Entry"
     Placeholder="アレルギー歴"/>
         <Entry x:Name="Taking_History_Entry"
-    Placeholder="副作用歴"/>
+    Placeholder="服用歴"/>
         
         
         <Entry x:Name="Day_Breakfast_Entry"

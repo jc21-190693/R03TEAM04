@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Collections;
 using SQLite;
 
 namespace NavPageSample
@@ -12,33 +13,36 @@ namespace NavPageSample
 
         public Database(string dbPath)
         {
+            //DBパスを渡して、
             _database = new SQLiteAsyncConnection(dbPath);
+            //パス.create_tableでUSERテーブルを作るメソッド
             _database.CreateTableAsync<User>().Wait();
         }
 
-        public Task<List<User>> GetUsersAsync()
+        //USERテーブルからデータを取得し、リストにするメソッド
+        public Task<List<User>>GetUsersAsync()
         {   
-            //userを取得
             return _database.Table<User>().ToListAsync();
         }
 
+        //DBパスを渡して、
         public Task<User> GetUserAsync(int id)
         {
-            // Get a specific user.                   //テーブルで定義したidなど
-            return _database.Table<User>().Where(i => i.user_id == id).FirstOrDefaultAsync();
+            return _database.Table<User>().Where(i => i.User_id == id).FirstOrDefaultAsync();
         }
 
+        //ユーザテーブルにデータを保存するメソッド
         public Task<int> SaveUserAsync(User user)
         {   
-            //
-            if (user.user_id != 0)
+            //ユーザIDっでどっちのメソッドにするか判別
+            if (user.User_id != 0)
             {
-                // Update an existing user.
+                //USE_IDがあったら更新.
                 return _database.UpdateAsync(user);
             }
             else
             {
-                //userインサート
+                //なかったらuserインサート
                 return _database.InsertAsync(user);
             }
         }
