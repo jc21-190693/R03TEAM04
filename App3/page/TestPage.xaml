@@ -5,7 +5,7 @@
 
     <StackLayout>
 
-        <Label Text="ダイヤモンド不愉快"
+        <Label Text="テスト画面"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
