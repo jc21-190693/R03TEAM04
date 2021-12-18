@@ -26,6 +26,7 @@ namespace NavPageSample.page
             listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
+
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
             //IsNullWhiteSpaceでは指定した文字列が空白」かどうか、true(空白あり)とfalseで返す。
@@ -66,6 +67,8 @@ namespace NavPageSample.page
             }
         }
 
+
+        //登録した後の
         private async void TappedlistviewItem(object sender, ItemTappedEventArgs e)
         {
             var enquete = e.Item as User;
@@ -111,7 +114,7 @@ namespace NavPageSample.page
                     }
                     else
                     {
-                        await DisplayAlert("エラーです！", "文字を入力してください", "完了！");
+                        await DisplayAlert("アンケート欄を全て入力してください。", "文字を入力してください", "完了！");
                     }
                 }
             }

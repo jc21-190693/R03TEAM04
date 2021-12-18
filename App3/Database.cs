@@ -46,6 +46,8 @@ namespace NavPageSample
                 return _database.InsertAsync(user);
             }
         }
+
+        //ユーザーテーブルの列を削除
         public Task<int> DeleteUserAsync(User user)
         {
             //user削除.

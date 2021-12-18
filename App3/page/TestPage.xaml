@@ -11,18 +11,33 @@
 
         <Entry x:Name="Birth_Entry"
     Placeholder="生年月日を入力してください。" />
-        <Entry x:Name="Sex_Entry"
-    Placeholder="あなたの性別は？？" />
-        <Entry x:Name="BloodType_Entry"
-    Placeholder="あなたの血液型は？？"/>
+        
+        <StackLayout>
+            <RadioButton Content="男性" Checked="RadioButton_Checked"/>
+            <RadioButton Content="女性" Checked="RadioButton_Checked"/>
+            <RadioButton Content="他" Checked="RadioButton_Checked"/>
+            <Entry x:Name="Sex_Entry"/>
+        </StackLayout>
+
+        <StackLayout>
+            <RadioButton Content="A" Checked="RadioButton_Checked"/>
+            <RadioButton Content="B" Checked="RadioButton_Checked"/>
+            <RadioButton Content="O" Checked="RadioButton_Checked"/>
+            <RadioButton Content="AB" Checked="RadioButton_Checked"/>
+            <Entry x:Name="BloodType_Entry"/>
+        </StackLayout>
+
+
         <Entry x:Name="Height_Entry"
     Placeholder="身長を入力"/>
         <Entry x:Name="Weight_Entry"
     Placeholder="体重を入力"/>
+        
         <Entry x:Name="Tabako_Entry"
     Placeholder="タバコは吸いますか？？"/>
         <Entry x:Name="Drinking_Entry"
     Placeholder="お酒は飲みますか？？"/>
+        
         <Entry x:Name="Allegry_Entry"
     Placeholder="アレルギー歴"/>
         <Entry x:Name="Taking_History_Entry"
@@ -38,7 +53,8 @@
 
         <Entry x:Name="End_Breakfast_Entry"
     Placeholder="朝食の時間"/>
-        <Entry x:Name="End_Lunch_Entry"/>
+        <Entry x:Name="End_Lunch_Entry"
+    Placeholder="昼食の時間"/>
 
 
         <Button Text="この情報をアンケートに登録"
@@ -52,7 +68,7 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
                             <StackLayout>
-                                <Label Text="{Binding Subject}"/>
+                                <Label Text="{Binding }"/>
                                 <Label Text="{Binding Content}"/>
                                 <Label Text="{Binding Date}"/>
                             </StackLayout>
