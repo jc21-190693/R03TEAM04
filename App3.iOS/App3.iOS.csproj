@@ -211,9 +211,9 @@
     <Folder Include="Icons\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\tuuchi.png" />
+    <BundleResource Include="Resources\tuuchi3.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\tuuchi2.png" />
+    <Content Include="Resources\lifeicon1.png" />
   </ItemGroup>
 </Project>
