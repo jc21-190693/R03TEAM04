@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="NavPageSample.MainPage1"
-             Title="今日飲む薬">
+             Title="今日飲む薬"
+            />
     <ContentPage.Content>
         <StackLayout>
 
@@ -11,18 +12,15 @@
                 <Button Text="設定" Clicked="Button_Clicked"  />
                  </Frame>              
             ーーーーーーーーーーーーーーーーーー
-            <Button Text="Bottom " ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" />
+             <Button ContentLayout="Right,0" Image="gear"  HorizontalOptions="End"
+                      Clicked="Button_Clicked"
+                     />
                 -->
 
-            <!--
-            <Button ContentLayout="Right,0" Image="gear"  HorizontalOptions="Start" 
+     <Button ContentLayout="Right,0" Image="gear2"  HorizontalOptions="End"
                       Clicked="Button_Clicked"
                      />
-            -->
-
-            <Button ContentLayout="Right,0" Image="gear"  HorizontalOptions="End"
-                      Clicked="Button_Clicked"
-                     />
+           
           
 
 
