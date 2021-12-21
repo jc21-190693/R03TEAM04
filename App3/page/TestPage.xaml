@@ -2,15 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="NavPageSample.page.TestPage">
-
+<ScrollView>
     <StackLayout>
 
         <Label Text="テスト画面"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-        <Entry x:Name="Birth_Entry"
-    Placeholder="生年月日を入力してください。" />
+        <StackLayout>
+            <TimePicker Time = "24:00:00"
+                        HorizontalOpions="Center"/>
+            <Label x:Name="Birth_Entry"/>
+        
+        </StackLayout>
         
         <StackLayout>
             <RadioButton Content="男性" Checked="RadioButton_Checked"/>
@@ -78,5 +82,6 @@
             </ListView.ItemTemplate>
         </ListView >
     </StackLayout>
+    </ScrollView>
 
 </ContentPage>
