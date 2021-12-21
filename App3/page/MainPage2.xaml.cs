@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,19 @@ namespace NavPageSample
         {
             InitializeComponent();
         }
+
+        private void Button2_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AlertPage());
+
+        }
+
+        private void Button3_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new LifeStylePage());
+
+        }
+
+      
     }
 }

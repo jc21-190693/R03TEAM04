@@ -10,13 +10,13 @@
 		<DebugSymbols>true</DebugSymbols>
 	</PropertyGroup>
 
-	<ItemGroup>
-	  <None Remove="page\gear.png" />
-	</ItemGroup>
+
 
 	<ItemGroup>
-		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-		<PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2291" />
+		<PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+		<PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -33,7 +33,10 @@
 		<EmbeddedResource Update="MainPage1.xaml">
 			<Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
-		<EmbeddedResource Update="page\FlyoutPage1.xaml">
+		<EmbeddedResource Update="page\AlertPage.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<EmbeddedResource Update="page\LifeStylePage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="page\MainPage2.xaml">
@@ -45,10 +48,7 @@
 		<EmbeddedResource Update="page\MainPage4.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
-		<EmbeddedResource Update="page\TESTDetail.xaml">
-		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-		</EmbeddedResource>
-		<EmbeddedResource Update="page\TESTFlyout.xaml">
+		<EmbeddedResource Update="page\MedicinePage.xaml">
 		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
 		</EmbeddedResource>
 		<EmbeddedResource Update="page\TestPage.xaml">
