@@ -208,6 +208,6 @@
     <Folder Include="Icons\" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\gear.png" />
+    <BundleResource Include="Resources\gear1.png" />
   </ItemGroup>
 </Project>
