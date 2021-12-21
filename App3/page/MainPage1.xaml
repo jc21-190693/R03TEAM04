@@ -17,7 +17,7 @@
                      />
                 -->
 
-     <Button ContentLayout="Right,0" Image="gearIcon"  HorizontalOptions="End"
+     <Button ContentLayout="Right,0" Image="gear1"  HorizontalOptions="End"
                       Clicked="Button_Clicked"
                      />
            
