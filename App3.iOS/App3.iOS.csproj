@@ -210,4 +210,7 @@
   <ItemGroup>
     <Folder Include="Icons\" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tuuchi.png" />
+  </ItemGroup>
 </Project>
