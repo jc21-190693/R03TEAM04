@@ -13,17 +13,17 @@
     Placeholder="生年月日を入力してください。" />
         
         <StackLayout>
-            <RadioButton Content="男性" Checked="RadioButton_Checked"/>
-            <RadioButton Content="女性" Checked="RadioButton_Checked"/>
-            <RadioButton Content="他" Checked="RadioButton_Checked"/>
+            <RadioButton Content="男性" />
+            <RadioButton Content="女性" />
+            <RadioButton Content="他" />
             <Entry x:Name="Sex_Entry"/>
         </StackLayout>
 
         <StackLayout>
-            <RadioButton Content="A" Checked="RadioButton_Checked"/>
-            <RadioButton Content="B" Checked="RadioButton_Checked"/>
-            <RadioButton Content="O" Checked="RadioButton_Checked"/>
-            <RadioButton Content="AB" Checked="RadioButton_Checked"/>
+            <RadioButton Content="A" />
+            <RadioButton Content="B" />
+            <RadioButton Content="O" />
+            <RadioButton Content="AB" />
             <Entry x:Name="BloodType_Entry"/>
         </StackLayout>
 
