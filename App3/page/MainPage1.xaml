@@ -14,10 +14,19 @@
             <Button Text="Bottom " ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" />
                 -->
 
+            <!--
             <Button ContentLayout="Right,0" Image="gear"  HorizontalOptions="Start" 
                       Clicked="Button_Clicked"
                      />
-            
+            -->
+
+            <Button ContentLayout="Right,0" Image="gear"  HorizontalOptions="End"
+                      Clicked="Button_Clicked"
+                     />
+          
+
+
+
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
 
