@@ -5,16 +5,59 @@
 
     <StackLayout>
 
-        <Label Text="ダイヤモンド不愉快"
+        <Label Text="テスト画面"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-        <Entry x:Name="SubjectEntry"
-    Placeholder="Enter Subject" />
-        <Entry x:Name="ContentEntry"
-    Placeholder="Contents Entry" />
+        <Entry x:Name="Birth_Entry"
+    Placeholder="生年月日を入力してください。" />
+        
+        <StackLayout>
+            <RadioButton Content="男性" Checked="RadioButton_Checked"/>
+            <RadioButton Content="女性" Checked="RadioButton_Checked"/>
+            <RadioButton Content="他" Checked="RadioButton_Checked"/>
+            <Entry x:Name="Sex_Entry"/>
+        </StackLayout>
 
-        <Button Text="Add to Database"
+        <StackLayout>
+            <RadioButton Content="A" Checked="RadioButton_Checked"/>
+            <RadioButton Content="B" Checked="RadioButton_Checked"/>
+            <RadioButton Content="O" Checked="RadioButton_Checked"/>
+            <RadioButton Content="AB" Checked="RadioButton_Checked"/>
+            <Entry x:Name="BloodType_Entry"/>
+        </StackLayout>
+
+
+        <Entry x:Name="Height_Entry"
+    Placeholder="身長を入力"/>
+        <Entry x:Name="Weight_Entry"
+    Placeholder="体重を入力"/>
+        
+        <Entry x:Name="Tabako_Entry"
+    Placeholder="タバコは吸いますか？？"/>
+        <Entry x:Name="Drinking_Entry"
+    Placeholder="お酒は飲みますか？？"/>
+        
+        <Entry x:Name="Allegry_Entry"
+    Placeholder="アレルギー歴"/>
+        <Entry x:Name="Taking_History_Entry"
+    Placeholder="服用歴"/>
+        
+        
+        <Entry x:Name="Day_Breakfast_Entry"
+    Placeholder="朝食の時間"/>
+        <Entry x:Name="Clockin_Time_Entry"
+    Placeholder="出勤する時間"/>
+        <Entry x:Name="Day_lunch_Entry"
+    Placeholder="昼食の時間"/>
+
+        <Entry x:Name="End_Breakfast_Entry"
+    Placeholder="朝食の時間"/>
+        <Entry x:Name="End_Lunch_Entry"
+    Placeholder="昼食の時間"/>
+
+
+        <Button Text="この情報をアンケートに登録"
     Clicked="OnAddButtonClicked" />
 
         <ListView x:Name="listview"
@@ -25,7 +68,7 @@
                     <ViewCell>
                         <StackLayout Orientation="Horizontal">
                             <StackLayout>
-                                <Label Text="{Binding Subject}"/>
+                                <Label Text="{Binding }"/>
                                 <Label Text="{Binding Content}"/>
                                 <Label Text="{Binding Date}"/>
                             </StackLayout>

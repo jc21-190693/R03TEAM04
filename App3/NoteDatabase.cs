@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using SQLite;
 using App3;
 
+//データベースアクセスのクラス
 namespace NavPageSample
 {
     public class NoteDatabase
@@ -11,7 +12,9 @@ namespace NavPageSample
 
         public NoteDatabase(string dbPath)
         {
+            //DBの作成コネクションクラスコンストラクタのパスを渡す
             _database = new SQLiteAsyncConnection(dbPath);
+            //空のＤＢを作成
             _database.CreateTableAsync<Note>().Wait();
         }
 
