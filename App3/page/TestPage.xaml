@@ -5,6 +5,7 @@
 
     <ScrollView>
 
+
         <StackLayout>
             
             <Label Text="テスト画面"
@@ -79,6 +80,7 @@
                                     <Label Text="{Binding }"/>
                                 </StackLayout>
                             </StackLayout>
+
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
