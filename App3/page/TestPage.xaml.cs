@@ -86,7 +86,6 @@ namespace NavPageSample.page
                     if (!string.IsNullOrWhiteSpace(Sex_Entry.Text) && !string.IsNullOrWhiteSpace(Tabako_Entry.Text))
                     {
                         enquete.Date_of_birth = DateTime.Parse(Birth_Entry.Text);
-                        enquete.Date_of_birth = DateTime.Parse(Birth_Entry.Text);
                         enquete.Sex = Sex_Entry.Text;
                         enquete.BoodType = BloodType_Entry.Text;
 

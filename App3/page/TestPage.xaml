@@ -11,14 +11,18 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Entry x:Name="Birth_Entry"
-    Placeholder="生年月日を入力してください。" />
+            <StackLayout>
+                <TimePicker Time="24:00:00"
+                    HorizontalOptions="Center"/>
+                <Label x:Name="Birth_Entry"/>
+
+            </StackLayout>
 
             <StackLayout>
                 <RadioButton Content="男性" />
                 <RadioButton Content="女性" />
                 <RadioButton Content="他" />
-                <Entry x:Name="Sex_Entry"/>
+                <Label x:Name="Sex_Entry"/>
             </StackLayout>
 
             <StackLayout>
@@ -26,7 +30,7 @@
                 <RadioButton Content="B" />
                 <RadioButton Content="O" />
                 <RadioButton Content="AB" />
-                <Entry x:Name="BloodType_Entry"/>
+                <Label x:Name="BloodType_Entry"/>
             </StackLayout>
 
 
@@ -70,9 +74,9 @@
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
                                 <StackLayout>
+                                    <Label Text="{Binding Tabako_Entry}"/>
                                     <Label Text="{Binding }"/>
-                                    <Label Text="{Binding Content}"/>
-                                    <Label Text="{Binding Date}"/>
+                                    <Label Text="{Binding }"/>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>
