@@ -17,11 +17,9 @@
            
 
             
-             <Button ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" 
+             <Button ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="End" 
                       Clicked="Button_Clicked"
                      />
-
-
             <!--
             <Button Text="Bottom " ContentLayout="Bottom,0" Image="gear"  HorizontalOptions="Start" 
                       Clicked="Button_Clicked"
