@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using App3;
 using Xamarin.Forms;
 using NavPageSample.page;
 
