@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10" >  
-             <Buton  ContentLayout="Bottom,0" Text="通知設定     >"   Image="tuuchi" Clicked="Button2_Clicked"  />
+             <Buton  ContentLayout="Bottom,0" Text="通知設定     >"    Image="tuuchi" Clicked="Button2_Clicked"  />
            
            </StackLayout>
 
