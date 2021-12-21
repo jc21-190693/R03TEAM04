@@ -212,6 +212,7 @@
     <Folder Include="Icons\" />
   </ItemGroup>
   <ItemGroup>
+    <BundleResource Include="Resources\gear1.png" />
     <BundleResource Include="Resources\tuuchi3.png" />
   </ItemGroup>
   <ItemGroup>
