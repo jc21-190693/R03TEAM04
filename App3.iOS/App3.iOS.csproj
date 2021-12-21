@@ -213,4 +213,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\tuuchi.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tuuchi2.png" />
+  </ItemGroup>
 </Project>
