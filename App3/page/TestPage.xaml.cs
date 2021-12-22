@@ -33,7 +33,7 @@ namespace NavPageSample.page
             if (!string.IsNullOrWhiteSpace(Birth_Entry.Text) && !string.IsNullOrWhiteSpace(Tabako_Entry.Text))
             {
 
-                //Userテーブルにデータを入力してもらう。全部STRING
+                //Userテーブルにデータを入力してもらう。全部STRINGなので変換してDBへ
                 await App.Database.SaveUserAsync(new User
                 {
                     Date_of_birth = DateTime.Parse(Birth_Entry.Text),
@@ -59,7 +59,7 @@ namespace NavPageSample.page
 
                 });
 
-                //入力欄を空にする？？？？必要？？
+                //入力欄を空にする　必要？？
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
 
                 //USERテーブルからデータを取得し、リストにするメソッドでlistviewに代入
@@ -68,7 +68,7 @@ namespace NavPageSample.page
         }
 
 
-        //登録した後の
+        //登録した後
         private async void TappedlistviewItem(object sender, ItemTappedEventArgs e)
         {
             var enquete = e.Item as User;
