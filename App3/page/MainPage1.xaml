@@ -5,16 +5,17 @@
              Title="今日飲む薬">
     <ContentPage.Content>
         <StackLayout>
+
+            <Button ContentLayout="Right,0" Image="gear1"  HorizontalOptions="End"
+                      Clicked="Button_Clicked"
+                     />
+
+
             
-            <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
-                <Button Text="設定" Clicked="Button_Clicked"  />
-                
-             
-            </Frame>
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
 
-           
+
 
 
         </StackLayout>
