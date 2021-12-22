@@ -22,5 +22,10 @@ namespace NavPageSample
             Navigation.PushAsync(new MainPage2());
 
         }
+        private void Button5_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DetailPage());
+
+        }
     }
 }
