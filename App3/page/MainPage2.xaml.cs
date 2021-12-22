@@ -13,7 +13,10 @@ namespace NavPageSample
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage2 : ContentPage
     {
-      
+        public MainPage2()
+        {
+            InitializeComponent();
+        }
         private void Button2_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AlertPage());
