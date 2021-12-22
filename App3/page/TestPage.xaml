@@ -13,8 +13,7 @@
                 HorizontalOptions="CenterAndExpand" />
 
             <StackLayout>
-                <TimePicker Time="24:00:00"
-                    HorizontalOptions="Center"/>
+           
                 <Label x:Name="Birth_Entry"/>
 
             </StackLayout>
