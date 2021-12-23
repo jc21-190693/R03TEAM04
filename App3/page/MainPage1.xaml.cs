@@ -29,6 +29,11 @@ namespace NavPageSample
 
 
         }
+        private void Button5_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new DetailPage());
+
+        }
 
 
 
