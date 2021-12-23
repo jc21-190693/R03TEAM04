@@ -11,7 +11,7 @@
 
             
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
-            <Button ContentLayout="Right,0" Image="test"  HorizontalOptions="Start" Clicked="Button5_Clicked"/>
+            <Label x:Name="label"></Label>
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
             <Button ContentLayout="Right,0" Image="test"  HorizontalOptions="Start" Clicked="Button5_Clicked"/>
 

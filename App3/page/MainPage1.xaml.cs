@@ -23,10 +23,14 @@ namespace NavPageSample
             Navigation.PushAsync(new MainPage2());
 
         }
-        private void Button5_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new DetailPage());
+
+        public void NameSet(string name) {
+            label.Text = name;
+
 
         }
+
+
+
     }
 }
