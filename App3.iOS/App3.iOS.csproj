@@ -223,5 +223,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\lifeicon1.png" />
+    <BundleResource Include="Resources\test.png" />
   </ItemGroup>
 </Project>
