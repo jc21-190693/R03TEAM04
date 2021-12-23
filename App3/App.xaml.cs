@@ -2,7 +2,9 @@ using System;
 using System.IO;
 using Xamarin.Forms;
 using NavPageSample.page;
-
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace NavPageSample
 {
@@ -32,6 +34,10 @@ namespace NavPageSample
         protected override void OnStart()
         {
             // Handle when your app starts
+            AppCenter.Start("ios=fe8c3a3b-eb40-4da7-851b-95ed32e059f9;" +
+                  "uwp={Your UWP App secret here};" +
+                  "android={Your Android App secret here}",
+                  typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
