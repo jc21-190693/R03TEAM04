@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NavPageSample.page
+namespace NavPageSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MedicineEntryPage : ContentPage

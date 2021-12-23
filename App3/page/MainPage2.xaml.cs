@@ -29,6 +29,13 @@ namespace NavPageSample
 
         }
 
-      
+        private void Button12_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MedicineEntryPage());
+
+        }
+
+
+
     }
 }
