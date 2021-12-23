@@ -9,5 +9,6 @@
             </Frame>
             <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg"/>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
