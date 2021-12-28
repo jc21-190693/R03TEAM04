@@ -10,6 +10,7 @@ namespace App3.iOS.notification
 {
     public class iOSNotificationManager : INotificationManager
     {
+        private const UNAuthorizationOptions types = UNAuthorizationOptions.Alert|UNAuthorizationOptions.Badge;
         int messageId = 0;
         bool hasNotificationsPermission;
         public event EventHandler NotificationReceived;
@@ -17,7 +18,7 @@ namespace App3.iOS.notification
         public void Initialize()
         {
             // request the permission to use local notifications
-            UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) =>
+            UNUserNotificationCenter.Current.RequestAuthorization(types, (approved, err) =>
             {
                 hasNotificationsPermission = approved;
             });

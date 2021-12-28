@@ -26,6 +26,7 @@ namespace NavPageSample.page
             {
                 var evtData = (NotificationEventArgs)eventArgs;
                 ShowNotification(evtData.Title, evtData.Message);
+                DisplayAlert("Alert", "TestPage.NotificationReceived", "ok");
             };
             DisplayAlert("Alert", "TestPage.InitializeComponent", "ok");
             // 2021/12/28 吉澤追加分 ここまで
