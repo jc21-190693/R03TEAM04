@@ -34,10 +34,10 @@ namespace NavPageSample
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start("ios=fe8c3a3b-eb40-4da7-851b-95ed32e059f9;" +
-                  "uwp={Your UWP App secret here};" +
-                  "android={Your Android App secret here}",
-                  typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("ios=d3a306e6-fda4-4bdf-aba4-fd683e0a5261;" +
+                              "uwp={Your UWP App secret here};" +
+                              "android={Your Android App secret here}",
+                              typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

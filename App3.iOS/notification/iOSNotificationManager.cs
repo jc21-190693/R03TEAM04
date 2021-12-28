@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Microsoft.AppCenter.Crashes;
 using NavPageSample.notification;
 using System;
 using UserNotifications;
@@ -10,7 +11,8 @@ namespace App3.iOS.notification
 {
     public class iOSNotificationManager : INotificationManager
     {
-        private const UNAuthorizationOptions types = UNAuthorizationOptions.Alert|UNAuthorizationOptions.Badge;
+        private const UNAuthorizationOptions types = UNAuthorizationOptions.Alert | 
+            UNAuthorizationOptions.Badge;
         int messageId = 0;
         bool hasNotificationsPermission;
         public event EventHandler NotificationReceived;
@@ -20,6 +22,11 @@ namespace App3.iOS.notification
             // request the permission to use local notifications
             UNUserNotificationCenter.Current.RequestAuthorization(types, (approved, err) =>
             {
+                if (err != null)
+                {
+                    Crashes.GenerateTestCrash();
+//                    (err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
+                }
                 hasNotificationsPermission = approved;
             });
         }

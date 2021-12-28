@@ -33,7 +33,7 @@ namespace NavPageSample.page
 
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
