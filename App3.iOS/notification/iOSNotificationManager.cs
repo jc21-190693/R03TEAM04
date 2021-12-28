@@ -1,4 +1,5 @@
 ﻿using Foundation;
+using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using NavPageSample.notification;
 using System;
@@ -24,10 +25,11 @@ namespace App3.iOS.notification
             {
                 if (err != null)
                 {
-                    Crashes.GenerateTestCrash();
-//                    (err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
+                    Analytics.TrackEvent("RequestAuthorization ERROR");
+                    //                    (err.LocalizedFailureReason + System.Environment.NewLine + err.LocalizedDescription);
                 }
                 hasNotificationsPermission = approved;
+                Analytics.TrackEvent("hasNotificationsPermission = " + approved);
             });
         }
 
