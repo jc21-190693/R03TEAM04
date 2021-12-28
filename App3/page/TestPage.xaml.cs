@@ -145,6 +145,12 @@ namespace NavPageSample.page
             string title = $"Local Notification #{notificationNumber}";
             string message = $"You have now received {notificationNumber} notifications!";
             notificationManager.SendNotification(title, message);
+            var msg = new Label()
+            {
+                Text = $"Notification send:\nTitle: {title}\nMessage: {message}"
+            };
+            stackLayout.Children.Add(msg);
+
         }
         private  void OnScheduleButtonClicked(object sender, EventArgs e)
         {
@@ -152,6 +158,11 @@ namespace NavPageSample.page
             string title = $"Local Notification #{notificationNumber}";
             string message = $"You have now received {notificationNumber} notifications!";
             notificationManager.SendNotification(title, message, DateTime.Now.AddSeconds(10));
+            var msg = new Label()
+            {
+                Text = $"Schedule Notification send:\nTitle: {title}\nMessage: {message}"
+            };
+            stackLayout.Children.Add(msg);
         }
 
         void ShowNotification(string title, string message)
