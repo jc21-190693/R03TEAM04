@@ -5,6 +5,7 @@ using NavPageSample.page;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using NavPageSample.notification;
 
 namespace NavPageSample
 {
@@ -27,6 +28,7 @@ namespace NavPageSample
         public App()
         {
             InitializeComponent();
+            DependencyService.Get<INotificationManager>().Initialize();
             MainPage = new TabbedPage1();
 
         }
