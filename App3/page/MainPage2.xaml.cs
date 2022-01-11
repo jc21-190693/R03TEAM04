@@ -17,7 +17,6 @@ namespace NavPageSample
         {
             InitializeComponent();
         }
-
         private void Button2_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new AlertPage());
@@ -30,6 +29,13 @@ namespace NavPageSample
 
         }
 
-      
+        private void Button12_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MedicineEntryPage());
+
+        }
+
+
+
     }
 }
