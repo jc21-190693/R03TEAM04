@@ -1,13 +1,8 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NavPageSample.notification;
-using NavPageSample.page;
 using Xamarin.Forms;
+using NavPageSample.page;
 
 namespace NavPageSample.page
 {
@@ -33,11 +28,11 @@ namespace NavPageSample.page
 
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
-            /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+            listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
 
@@ -78,7 +73,7 @@ namespace NavPageSample.page
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
 
                 //USERテーブルからデータを取得し、リストにするメソッドでlistviewに代入
-                /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                listview.ItemsSource = await App.Database.GetUsersAsync();
             }
         }
 
@@ -94,7 +89,7 @@ namespace NavPageSample.page
                 if (action == "データの削除")
                 {
                     await App.Database.DeleteUserAsync(enquete);
-                    /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                    listview.ItemsSource = await App.Database.GetUsersAsync();
                 }
                 else if (action == "データの更新")
                 {
@@ -125,7 +120,7 @@ namespace NavPageSample.page
 
                         await App.Database.SaveUserAsync(enquete);
                         /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
-                        /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                        listview.ItemsSource = await App.Database.GetUsersAsync();
                     }
                     else
                     {
