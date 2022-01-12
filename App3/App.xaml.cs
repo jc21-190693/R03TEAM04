@@ -2,7 +2,10 @@ using System;
 using System.IO;
 using Xamarin.Forms;
 using NavPageSample.page;
-
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using NavPageSample.notification;
 
 namespace NavPageSample
 {
@@ -25,6 +28,7 @@ namespace NavPageSample
         public App()
         {
             InitializeComponent();
+            DependencyService.Get<INotificationManager>().Initialize();
             MainPage = new TabbedPage1();
 
         }
@@ -32,6 +36,10 @@ namespace NavPageSample
         protected override void OnStart()
         {
             // Handle when your app starts
+            AppCenter.Start("ios=d3a306e6-fda4-4bdf-aba4-fd683e0a5261;" +
+                              "uwp={Your UWP App secret here};" +
+                              "android={Your Android App secret here}",
+                              typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

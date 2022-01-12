@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NavPageSample.notification;
 using NavPageSample.page;
 using Xamarin.Forms;
 
@@ -17,9 +18,22 @@ namespace NavPageSample.page
         public TestPage()
         {
             InitializeComponent();
+
+            // 2021/12/28 吉澤追加分 ここから
+
+            notificationManager = DependencyService.Get<INotificationManager>();
+            notificationManager.NotificationReceived += (sender, eventArgs) =>
+            {
+                var evtData = (NotificationEventArgs)eventArgs;
+                ShowNotification(evtData.Title, evtData.Message);
+                DisplayAlert("Alert", "TestPage.NotificationReceived", "ok");
+            };
+            DisplayAlert("Alert", "TestPage.InitializeComponent", "ok");
+            // 2021/12/28 吉澤追加分 ここまで
+
         }
 
-        protected override async void OnAppearing()
+        protected override void OnAppearing()
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
@@ -120,5 +134,53 @@ namespace NavPageSample.page
                 }
             }
         }
+
+        // 2021/12/28 吉澤追加分 ここから
+
+        INotificationManager notificationManager;
+
+        int notificationNumber = 0;
+
+        private void OnNotifyButtonClicked(object sender, EventArgs e)
+        {
+            notificationNumber++;
+            string title = $"Local Notification #{notificationNumber}";
+            string message = $"You have now received {notificationNumber} notifications!";
+            notificationManager.SendNotification(title, message);
+            var msg = new Label()
+            {
+                Text = $"Notification send:\nTitle: {title}\nMessage: {message}"
+            };
+            stackLayout.Children.Add(msg);
+
+        }
+        private  void OnScheduleButtonClicked(object sender, EventArgs e)
+        {
+            notificationNumber++;
+            string title = $"Local Notification #{notificationNumber}";
+            string message = $"You have now received {notificationNumber} notifications!";
+            notificationManager.SendNotification(title, message, DateTime.Now.AddSeconds(10));
+            var msg = new Label()
+            {
+                Text = $"Schedule Notification send:\nTitle: {title}\nMessage: {message}"
+            };
+            stackLayout.Children.Add(msg);
+        }
+
+        void ShowNotification(string title, string message)
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                var msg = new Label()
+                {
+                    Text = $"Notification Received:\nTitle: {title}\nMessage: {message}"
+                };
+                stackLayout.Children.Add(msg);
+            });
+        }
+
+        // 2021/12/28 吉澤追加分 ここまで
+
+
     }
 }
