@@ -59,6 +59,8 @@ namespace NavPageSample
         public DateTime End_breakfast { get; set; }
         [NotNull]
         public DateTime End_lunch { get; set; }
+
+
     }
 
     //薬テーブル
