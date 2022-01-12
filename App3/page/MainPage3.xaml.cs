@@ -24,7 +24,10 @@ namespace NavPageSample.page
 
                 ZXing.Result result = await scanner.Scan();
 
-               
+            if (result != null)
+            {
+                msg.Text = result.Text;
+            }
             
         }
     }
