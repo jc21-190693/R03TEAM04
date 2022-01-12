@@ -8,6 +8,21 @@
                 <Label Text="薬の登録" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
             <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="URL:"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="result"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
         </StackLayout>
         
     </ContentPage.Content>
