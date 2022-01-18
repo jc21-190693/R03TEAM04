@@ -62,6 +62,26 @@
 
             <Button Text="この情報をアンケートに登録"
     Clicked="OnAddButtonClicked" />
+
+            <ListView x:Name="listview"
+     ItemTapped="TappedlistviewItem"
+     HasUnevenRows = "True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="{Binding Date_of_birth}"/>
+                                    <Label Text="{Binding Sex}"/>
+                                    <Label Text="{Binding }"/>
+                                    <Label Text="{Binding }"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView >
+            
         </StackLayout>
     </ScrollView>
 

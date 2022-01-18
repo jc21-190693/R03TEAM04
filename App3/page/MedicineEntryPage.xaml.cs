@@ -15,6 +15,17 @@ namespace NavPageSample.page
         {
             InitializeComponent();
         }
-        
+
+        private async void OnAddButtonClicked(object sender, EventArgs e)
+        {
+            //Medicineテーブルを保存
+            await App.Database.SaveMedicineAsync(new Medicine
+            {
+                
+                Medicine_name = Medicine_Name_Entry.Text,
+
+            }) ;
+
+        }
     }
 }

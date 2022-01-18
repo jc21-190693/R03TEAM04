@@ -23,7 +23,7 @@ namespace NavPageSample.page
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
-            /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+            listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
 
@@ -36,7 +36,7 @@ namespace NavPageSample.page
                 //Userテーブルにデータを入力してもらう。全部STRINGなので変換してDBへ
                 await App.Database.SaveUserAsync(new User
                 {
-                    User_id = 1,
+                    
                     Date_of_birth = DateTime.Parse(Birth_Entry.Text),
                     Sex = Sex_Entry.Text,
                     BoodType = BloodType_Entry.Text,
@@ -64,7 +64,7 @@ namespace NavPageSample.page
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
 
                 //USERテーブルからデータを取得し、リストにするメソッドでlistviewに代入
-                /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                listview.ItemsSource = await App.Database.GetUsersAsync();
             }
         }
 
@@ -80,7 +80,7 @@ namespace NavPageSample.page
                 if (action == "データの削除")
                 {
                     await App.Database.DeleteUserAsync(enquete);
-                    /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                    listview.ItemsSource = await App.Database.GetUsersAsync();
                 }
                 else if (action == "データの更新")
                 {
@@ -111,7 +111,7 @@ namespace NavPageSample.page
 
                         await App.Database.SaveUserAsync(enquete);
                         /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
-                        /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                        listview.ItemsSource = await App.Database.GetUsersAsync();
                     }
                     else
                     {

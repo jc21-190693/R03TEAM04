@@ -10,7 +10,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-                <Entry x:Name="Medicine_name"
+                <Entry x:Name="Medicine_Name_Entry"
                        Placeholder= "登録する薬の名前を入力"/>
                 
                 <StackLayout>

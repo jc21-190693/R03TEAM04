@@ -97,6 +97,7 @@ namespace NavPageSample
         //
         [NotNull]
         public string Taking_history { get; set; }
+
         //一度に飲む薬の量
         [NotNull]
         public int Quantity { get; set; }
