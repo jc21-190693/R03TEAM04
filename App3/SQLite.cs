@@ -59,6 +59,7 @@ namespace NavPageSample
         public DateTime End_breakfast { get; set; }
         [NotNull]
         public DateTime End_lunch { get; set; }
+        public string jikantai { get; set; }
 
 
     }
@@ -74,6 +75,8 @@ namespace NavPageSample
         public string Medicine_name { get; set; }
         //薬のURL
         public string Url { get; set; }
+
+        public string timing { get; set; }
     }
 
     //アレルギーテーブル
