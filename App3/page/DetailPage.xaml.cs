@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NavPageSample
+namespace NavPageSample.page
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MedicineEntryPage : ContentPage
+    public partial class DetailPage : ContentPage
     {
-        public MedicineEntryPage()
+        public DetailPage()
         {
             InitializeComponent();
         }
-        
     }
 }

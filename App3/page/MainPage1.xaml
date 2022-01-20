@@ -6,15 +6,14 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Button ContentLayout="Right,0" Image="gear1"  HorizontalOptions="End"
-                      Clicked="Button_Clicked"
-                     />
+            <Button ContentLayout="Right,0" Image="gear1"  HorizontalOptions="End" Clicked="Button_Clicked"/>
 
 
             
             <Label Text="朝" FontSize="Title" Padding="60,10,60,10"/>
+            <Label x:Name="label"></Label>
             <Label Text="昼" FontSize="Title" Padding="60,10,30,10"/>
-
+            <Button ContentLayout="Right,0" Image="test"  HorizontalOptions="Start" Clicked="Button5_Clicked"/>
 
 
 

@@ -17,7 +17,11 @@
                 <Button Text="生活習慣     >"  FontSize="30" Clicked="Button3_Clicked" VerticalOptions="Center" />
                   </StackLayout>
 
-          
-             </StackLayout>
+            <StackLayout  Orientation="Horizontal" Spacing="0"  Margin="20,50,10,10">
+                <Button Text="薬の登録     >"  FontSize="30" Clicked="Button12_Clicked" VerticalOptions="Center" />
+            </StackLayout>
+
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
