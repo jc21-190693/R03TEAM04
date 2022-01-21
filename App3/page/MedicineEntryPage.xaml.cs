@@ -15,6 +15,26 @@ namespace NavPageSample
         {
             InitializeComponent();
         }
-        
+
+        private async void OnAddButtonClicked(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrWhiteSpace(while))
+            {
+                await App.Database.SaveMedicineAsync(new Medicine
+                {
+                    Medicine_name = Medicine_Name_Entry.Text,
+                    Url = Url_Entry.Text,
+                    timing = Timing_Entry.Text,
+                });
+
+                await App.Database.SaveUserAsync(new User
+                {
+                    jikantai = Jikantai_Entry.Text
+                });
+            }
+            
+        }
+
+
     }
 }

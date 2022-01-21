@@ -18,7 +18,7 @@
                     <RadioButton Content="朝に服用する"/>
                     <RadioButton Content="昼に服用する"/>
                     <RadioButton Content="朝と昼に服用する"/>
-                    <Label x:Name="aaa"/>
+                    <Label x:Name="Jikantai_Entry"/>
 
                 </StackLayout>
 
@@ -26,13 +26,13 @@
                     <Label Text="飲むタイミング"/>
                     <RadioButton Content="食前の時"/>
                     <RadioButton Content="食後の時"/>
-                    <Label x:Name="bbb"/>
+                    <Label x:Name="Timing_Entry"/>
 
                     <Label Text="生活習慣アンケートをもとに通知します。"/>
                 </StackLayout>
 
                 <Label Text="1回で飲む錠剤の数"/>
-                <Entry x:Name="ccc"
+                <Entry x:Name="Quantity_Entry"
                        Placeholder="数を入力"/>
 
                 <Label Text="残りの錠剤の数"/>
@@ -40,7 +40,7 @@
                        Placeholder="数を入力"/>
 
                 <Label Text="注意と副作用"/>
-                <Label Text="ここ？？？？？"/>
+                <Label x:Name="Url_Entry"/>
 
                 <Label Text="QRコードリーダーを起動"/>
 
