@@ -59,7 +59,7 @@ namespace NavPageSample.page
                     Taking_history = Taking_History_Entry.Text,
 
                     //平日の
-                    Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text),
+                    Day_breakfast = Day_Breakfast_Entry.ToString(),
                     Day_lunch = DateTime.Parse(Day_lunch_Entry.Text),
                     Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text),
 
@@ -67,7 +67,7 @@ namespace NavPageSample.page
                     End_breakfast = DateTime.Parse(End_Breakfast_Entry.Text),
                     End_lunch = DateTime.Parse(End_Lunch_Entry.Text)
 
-                }); ;
+            }); ;
 
                 //入力欄を空にする　必要？？
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
@@ -109,7 +109,7 @@ namespace NavPageSample.page
                         enquete.Taking_history = Taking_History_Entry.Text;
 
                         //平日の
-                        enquete.Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text);
+                        enquete.Day_breakfast = Day_Breakfast_Entry.ToString();
                         enquete.Day_lunch = DateTime.Parse(Day_lunch_Entry.Text);
                         enquete.Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text);
 

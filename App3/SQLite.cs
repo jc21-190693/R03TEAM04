@@ -47,7 +47,7 @@ namespace NavPageSample
         //平日
         //朝食、出勤、昼食
         [NotNull]
-        public DateTime Day_breakfast { get; set; }
+        public String  Day_breakfast { get; set; }
         [NotNull]
         public DateTime Clockin_time { get; set; }
         [NotNull]
