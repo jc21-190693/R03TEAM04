@@ -18,7 +18,9 @@ namespace NavPageSample
 
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
-            if (!String.IsNullOrWhiteSpace(while))
+            
+
+            if (!String.IsNullOrWhiteSpace(Medicine_Name_Entry.Text))
             {
                 await App.Database.SaveMedicineAsync(new Medicine
                 {

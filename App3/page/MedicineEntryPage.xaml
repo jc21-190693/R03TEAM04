@@ -35,10 +35,6 @@
                 <Entry x:Name="Quantity_Entry"
                        Placeholder="数を入力"/>
 
-                <Label Text="残りの錠剤の数"/>
-                <Entry x:Name="ddd"
-                       Placeholder="数を入力"/>
-
                 <Label Text="注意と副作用"/>
                 <Label x:Name="Url_Entry"/>
 
