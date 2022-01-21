@@ -62,9 +62,43 @@ namespace NavPageSample
             return _database.Table<Medicine>().ToListAsync();
         }
 
-        /*public Task<Medicine> GetMedicineAsync()
+        public Task<Medicine> GetMedicineAsync(int id)
         {
-            return _database.Table<Medicine>().Where()
-        }*/
+            return _database.Table<Medicine>().Where(i => i.Medicine_id == id).FirstOrDefaultAsync();
+        }
+
+        //Medicineテーブルを保存とアプデ
+        public Task<int> SaveMedicineAsync(Medicine medicine)
+        {
+            if(medicine.Medicine_id != 0)
+            {
+                return _database.UpdateAsync(medicine);
+            }
+            else
+            {
+                return _database.InsertAsync(medicine);
+            }
+        }
+
+        //薬の服用テーブル
+        public Task<List<TakeMedicine>> GetTakeMedicinesAysnc()
+        {
+            return _database.Table<TakeMedicine>().ToListAsync();
+        }
+        public Task<TakeMedicine> GetTakeMedicineAysnc(int id)
+        {
+            return _database.Table<TakeMedicine>().Where(i => i.Medicine_id == id).FirstOrDefaultAsync();
+        }
+        public Task<int> SaveTakeMedicineAsync(TakeMedicine takeMedicine)
+        {
+            if (takeMedicine.Medicine_id != 0)
+            {
+                return _database.UpdateAsync(takeMedicine);
+            }
+            else
+            {
+                return _database.InsertAsync(takeMedicine);
+            }
+        }
     }
 }

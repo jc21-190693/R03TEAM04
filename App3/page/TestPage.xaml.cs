@@ -1,13 +1,8 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NavPageSample.notification;
-using NavPageSample.page;
 using Xamarin.Forms;
+using NavPageSample.page;
 
 namespace NavPageSample.page
 {
@@ -33,11 +28,11 @@ namespace NavPageSample.page
 
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
-            /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+            listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
 
@@ -50,7 +45,7 @@ namespace NavPageSample.page
                 //Userテーブルにデータを入力してもらう。全部STRINGなので変換してDBへ
                 await App.Database.SaveUserAsync(new User
                 {
-                    User_id = 1,
+                    
                     Date_of_birth = DateTime.Parse(Birth_Entry.Text),
                     Sex = Sex_Entry.Text,
                     BoodType = BloodType_Entry.Text,
@@ -64,7 +59,7 @@ namespace NavPageSample.page
                     Taking_history = Taking_History_Entry.Text,
 
                     //平日の
-                    Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text),
+                    Day_breakfast = Day_Breakfast_Entry.ToString(),
                     Day_lunch = DateTime.Parse(Day_lunch_Entry.Text),
                     Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text),
 
@@ -72,13 +67,13 @@ namespace NavPageSample.page
                     End_breakfast = DateTime.Parse(End_Breakfast_Entry.Text),
                     End_lunch = DateTime.Parse(End_Lunch_Entry.Text)
 
-                }); ;
+            }); ;
 
                 //入力欄を空にする　必要？？
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
 
                 //USERテーブルからデータを取得し、リストにするメソッドでlistviewに代入
-                /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                listview.ItemsSource = await App.Database.GetUsersAsync();
             }
         }
 
@@ -94,7 +89,7 @@ namespace NavPageSample.page
                 if (action == "データの削除")
                 {
                     await App.Database.DeleteUserAsync(enquete);
-                    /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                    listview.ItemsSource = await App.Database.GetUsersAsync();
                 }
                 else if (action == "データの更新")
                 {
@@ -114,7 +109,7 @@ namespace NavPageSample.page
                         enquete.Taking_history = Taking_History_Entry.Text;
 
                         //平日の
-                        enquete.Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text);
+                        enquete.Day_breakfast = Day_Breakfast_Entry.ToString();
                         enquete.Day_lunch = DateTime.Parse(Day_lunch_Entry.Text);
                         enquete.Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text);
 
@@ -125,7 +120,7 @@ namespace NavPageSample.page
 
                         await App.Database.SaveUserAsync(enquete);
                         /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
-                        /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                        listview.ItemsSource = await App.Database.GetUsersAsync();
                     }
                     else
                     {

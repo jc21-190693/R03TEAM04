@@ -15,6 +15,7 @@
             <Entry x:Name="Birth_Entry"/>
 
             <StackLayout>
+                <Label Text="性別を入力"/>
                 <RadioButton Content="男性" />
                 <RadioButton Content="女性" />
                 <RadioButton Content="他" />
@@ -22,6 +23,7 @@
             </StackLayout>
 
             <StackLayout>
+                <Label Text="血液型を入力"/>
                 <RadioButton Content="A" />
                 <RadioButton Content="B" />
                 <RadioButton Content="O" />
@@ -68,9 +70,12 @@
             <Entry x:Name="Taking_History_Entry"
     Placeholder="服用歴"/>
 
+            <TimePicker x:Name="Day_Breakfast_Entry"
+                    Time="11:00:00"
+                    Format="t"/>
 
-            <Entry x:Name="Day_Breakfast_Entry"
-    Placeholder="朝食の時間"/>
+
+
             <Entry x:Name="Clockin_Time_Entry"
     Placeholder="出勤する時間"/>
             <Entry x:Name="Day_lunch_Entry"
@@ -84,6 +89,34 @@
 
             <Button Text="この情報をアンケートに登録"
     Clicked="OnAddButtonClicked" />
+
+            <ListView x:Name="listview"
+     ItemTapped="TappedlistviewItem"
+     HasUnevenRows = "True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout>
+                                    <Label Text="{Binding Date_of_birth}"/>
+                                    <Label Text="{Binding Sex}"/>
+                                    <Label Text="{Binding BoodType}"/>
+                                    <Label Text="{Binding Height}"/>
+                                    <Label Text="{Binding Weight}"/>
+                                    <Label Text="{Binding Tabako}"/>
+                                    <Label Text="{Binding Drinking}"/>
+                                    <Label Text="{Binding Taking_history}"/>
+                                    <Label Text="{Binding Day_breakfast}"/>
+                                    <Label Text="{Binding Clockin_time}"/>
+                                    <Label Text="{Binding Day_lunch}"/>
+                                    <Label Text="{Binding End_breakfast}"/>
+                                    <Label Text="{Binding End_lunch}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView >
         </StackLayout>
     </ScrollView>
 
