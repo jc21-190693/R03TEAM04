@@ -27,6 +27,7 @@ namespace NavPageSample.page
             if (result != null)
             {
                 msg.Text = result.Text;
+                Uri linkUri = new Uri(msg.Text);
             }
             
         }
