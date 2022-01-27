@@ -39,9 +39,6 @@ namespace NavPageSample.page
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
 
-            User p = new User();
-            p.Date_of_birth
-
             //IsNullWhiteSpaceでは指定した文字列が空白」かどうか、true(空白あり)とfalseで返す。
             if (!string.IsNullOrWhiteSpace(Birth_Entry.ToString()))
             {
