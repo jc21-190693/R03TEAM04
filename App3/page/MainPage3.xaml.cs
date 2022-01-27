@@ -26,6 +26,7 @@ namespace NavPageSample.page
 
                 if (result != null)
                     msg.Text = result.Text;
+
             
         }
     }
