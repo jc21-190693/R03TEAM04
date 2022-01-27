@@ -12,9 +12,13 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <Entry x:Name="Birth_Entry"/>
+            <DatePicker x:Name="Birth_Entry"
+                        MinimumDate="01/01/1900"
+                        MaximumDate="12/31/2022"
+                        Date="01/01/2022" />
 
             <StackLayout>
+                <Label Text="性別を入力"/>
                 <RadioButton Content="男性" />
                 <RadioButton Content="女性" />
                 <RadioButton Content="他" />
@@ -22,6 +26,7 @@
             </StackLayout>
 
             <StackLayout>
+                <Label Text="血液型を入力"/>
                 <RadioButton Content="A" />
                 <RadioButton Content="B" />
                 <RadioButton Content="O" />
@@ -68,19 +73,25 @@
             <Entry x:Name="Taking_History_Entry"
     Placeholder="服用歴"/>
 
+            <TimePicker x:Name="Day_Breakfast_Entry"
+                    Time="12:00:00"
+                    Format="t"/>
 
-            <Entry x:Name="Day_Breakfast_Entry"
-    Placeholder="朝食の時間"/>
-            <Entry x:Name="Clockin_Time_Entry"
-    Placeholder="出勤する時間"/>
-            <Entry x:Name="Day_lunch_Entry"
-    Placeholder="昼食の時間"/>
-
-            <Entry x:Name="End_Breakfast_Entry"
-    Placeholder="朝食の時間"/>
-            <Entry x:Name="End_Lunch_Entry"
-    Placeholder="昼食の時間"/>
-
+            <TimePicker x:Name="Clockin_Time_Entry"
+                    Time="12:00:00"
+                    Format="t"/>
+            
+            <TimePicker x:Name="Day_lunch_Entry"
+                    Time="12:00:00"
+                    Format="t"/>
+            
+            <TimePicker x:Name="End_Breakfast_Entry"
+                    Time="12:00:00"
+                    Format="t"/>
+            
+            <TimePicker x:Name="End_Lunch_Entry"
+                    Time="12:00:00"
+                    Format="t"/>
 
             <Button Text="この情報をアンケートに登録"
     Clicked="OnAddButtonClicked" />
@@ -106,7 +117,6 @@
                                     <Label Text="{Binding Day_lunch}"/>
                                     <Label Text="{Binding End_breakfast}"/>
                                     <Label Text="{Binding End_lunch}"/>
-                                    <Label Text="{Binding }"/>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

@@ -16,17 +16,27 @@ namespace NavPageSample
             InitializeComponent();
         }
 
+        private async void OnAddButtonClicked(object sender, EventArgs e)
+        {
+            
 
-        void Button_MainPage(object sender, EventArgs e) {
-            string name = Medicine_name.Text;
+            if (!String.IsNullOrWhiteSpace(Medicine_Name_Entry.Text))
+            {
+                await App.Database.SaveMedicineAsync(new Medicine
+                {
+                    Medicine_name = Medicine_Name_Entry.Text,
+                    Url = Url_Entry.Text,
+                    timing = Timing_Entry.Text,
+                });
 
-            var MainPage1 = new MainPage1();
-            Navigation.PushAsync(MainPage1);
-
-            MainPage1.NameSet(name);
-
-
+                await App.Database.SaveUserAsync(new User
+                {
+                    jikantai = Jikantai_Entry.Text
+                });
+            }
+            
         }
+
 
     }
 }
