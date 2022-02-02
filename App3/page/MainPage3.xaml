@@ -16,7 +16,7 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Alternatively, click " />
-                        <Span Text="here"
+                        <Span Text="{Binding Source={x:Reference msg},Path=Text}"   
                   TextColor="Blue"
                   TextDecorations="Underline">
                             <Span.GestureRecognizers>

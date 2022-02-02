@@ -39,9 +39,8 @@ namespace NavPageSample.page
                 Text = result.Text,
                 TextType = TextType.Html
             };
-
-           
-        }
+ 
+    }
 
 
 
