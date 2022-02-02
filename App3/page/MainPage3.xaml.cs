@@ -24,11 +24,9 @@ namespace NavPageSample.page
 
                 ZXing.Result result = await scanner.Scan();
 
-            if (result != null)
-            {
-                msg.Text = result.Text;
-                Uri linkUri = new Uri(msg.Text);
-            }
+                if (result != null)
+                    msg.Text = result.Text;
+
             
         }
     }

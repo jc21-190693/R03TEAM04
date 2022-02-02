@@ -21,7 +21,7 @@ namespace NavPageSample
 
         //生年月日
         [NotNull]
-        public DateTime Date_of_birth { get; set; }
+        public string Date_of_birth { get; set; }
         //性別
         [NotNull]
         public string  Sex { get; set; }
@@ -47,18 +47,21 @@ namespace NavPageSample
         //平日
         //朝食、出勤、昼食
         [NotNull]
-        public DateTime Day_breakfast { get; set; }
+        public String  Day_breakfast { get; set; }
         [NotNull]
-        public DateTime Clockin_time { get; set; }
+        public String Clockin_time { get; set; }
         [NotNull]
-        public DateTime Day_lunch { get; set; }
+        public String Day_lunch { get; set; }
 
         //休日
         //朝食、昼食
         [NotNull]
-        public DateTime End_breakfast { get; set; }
+        public String End_breakfast { get; set; }
         [NotNull]
-        public DateTime End_lunch { get; set; }
+        public String End_lunch { get; set; }
+        public string jikantai { get; set; }
+
+
     }
 
     //薬テーブル
@@ -72,6 +75,8 @@ namespace NavPageSample
         public string Medicine_name { get; set; }
         //薬のURL
         public string Url { get; set; }
+
+        public string timing { get; set; }
     }
 
     //アレルギーテーブル
@@ -97,6 +102,7 @@ namespace NavPageSample
         //
         [NotNull]
         public string Taking_history { get; set; }
+
         //一度に飲む薬の量
         [NotNull]
         public int Quantity { get; set; }
@@ -115,7 +121,7 @@ namespace NavPageSample
         public int Medicine_id { get; set; }
         //薬を飲む時間
         [NotNull]
-        public DateTime Medicine_time { get; set; }
+        public String Medicine_time { get; set; }
     }
 
 }

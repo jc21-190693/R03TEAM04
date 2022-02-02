@@ -1,13 +1,8 @@
 ﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NavPageSample.notification;
-using NavPageSample.page;
 using Xamarin.Forms;
+using NavPageSample.page;
 
 namespace NavPageSample.page
 {
@@ -33,25 +28,26 @@ namespace NavPageSample.page
 
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             //OnAppearingメソッドでデータベースに格納されている物がlistviewに設定される
             base.OnAppearing();
-            /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+            listview.ItemsSource = await App.Database.GetUsersAsync();
         }
 
 
         private async void OnAddButtonClicked(object sender, EventArgs e)
         {
+
             //IsNullWhiteSpaceでは指定した文字列が空白」かどうか、true(空白あり)とfalseで返す。
-            if (!string.IsNullOrWhiteSpace(Birth_Entry.Text) && !string.IsNullOrWhiteSpace(Tabako_Entry.Text))
+            if (!string.IsNullOrWhiteSpace(Birth_Entry.ToString()))
             {
 
                 //Userテーブルにデータを入力してもらう。全部STRINGなので変換してDBへ
                 await App.Database.SaveUserAsync(new User
                 {
-                    User_id = 1,
-                    Date_of_birth = DateTime.Parse(Birth_Entry.Text),
+                    
+                    Date_of_birth = Birth_Entry.ToString(),
                     Sex = Sex_Entry.Text,
                     BoodType = BloodType_Entry.Text,
 
@@ -64,13 +60,13 @@ namespace NavPageSample.page
                     Taking_history = Taking_History_Entry.Text,
 
                     //平日の
-                    Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text),
-                    Day_lunch = DateTime.Parse(Day_lunch_Entry.Text),
-                    Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text),
+                    Day_breakfast = Day_Breakfast_Entry.ToString(),
+                    Day_lunch = Day_lunch_Entry.ToString(),
+                    Clockin_time = Clockin_Time_Entry.ToString(),
 
                     //休日の
-                    End_breakfast = DateTime.Parse(End_Breakfast_Entry.Text),
-                    End_lunch = DateTime.Parse(End_Lunch_Entry.Text)
+                    End_breakfast = End_Breakfast_Entry.ToString(),
+                    End_lunch = End_Lunch_Entry.ToString()
 
                 }); ;
 
@@ -78,7 +74,7 @@ namespace NavPageSample.page
                 /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
 
                 //USERテーブルからデータを取得し、リストにするメソッドでlistviewに代入
-                /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                listview.ItemsSource = await App.Database.GetUsersAsync();
             }
         }
 
@@ -94,14 +90,14 @@ namespace NavPageSample.page
                 if (action == "データの削除")
                 {
                     await App.Database.DeleteUserAsync(enquete);
-                    /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                    listview.ItemsSource = await App.Database.GetUsersAsync();
                 }
                 else if (action == "データの更新")
                 {
                     if (!string.IsNullOrWhiteSpace(Sex_Entry.Text) && !string.IsNullOrWhiteSpace(Tabako_Entry.Text))
                     {
                         //ででで
-                        enquete.Date_of_birth = DateTime.Parse(Birth_Entry.Text);
+                        enquete.Date_of_birth = Birth_Entry.ToString();
                         enquete.Sex = Sex_Entry.Text;
                         enquete.BoodType = BloodType_Entry.Text;
 
@@ -114,18 +110,18 @@ namespace NavPageSample.page
                         enquete.Taking_history = Taking_History_Entry.Text;
 
                         //平日の
-                        enquete.Day_breakfast = DateTime.Parse(Day_Breakfast_Entry.Text);
-                        enquete.Day_lunch = DateTime.Parse(Day_lunch_Entry.Text);
-                        enquete.Clockin_time = DateTime.Parse(Clockin_Time_Entry.Text);
+                        enquete.Day_breakfast = Day_Breakfast_Entry.ToString();
+                        enquete.Day_lunch =Day_lunch_Entry.ToString();
+                        enquete.Clockin_time = Clockin_Time_Entry.ToString();
 
                         //休日の
-                        enquete.End_breakfast = DateTime.Parse(End_Breakfast_Entry.Text);
-                        enquete.End_lunch = DateTime.Parse(End_Lunch_Entry.Text);
+                        enquete.End_breakfast = End_Breakfast_Entry.ToString();
+                        enquete.End_lunch = End_Lunch_Entry.ToString();
 
 
                         await App.Database.SaveUserAsync(enquete);
                         /*SubjectEntry.Text = ContentEntry.Text = string.Empty;*/
-                        /*listview.ItemsSource = await App.Database.GetUsersAsync();*/
+                        listview.ItemsSource = await App.Database.GetUsersAsync();
                     }
                     else
                     {
