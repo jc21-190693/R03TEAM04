@@ -16,12 +16,12 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Alternatively, click " />
-                        <Span Text="{Binding Source={x:Reference msg},Path=Text}"   
+                        <Span Text="here"   
                   TextColor="Blue"
                   TextDecorations="Underline">
                             <Span.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding TapCommand}"
-                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
+                                          CommandParameter="{Binding Source={x:Reference msg},Path=Text}"/>
                             </Span.GestureRecognizers>
                         </Span>
                         <Span Text=" to view Xamarin documentation." />
