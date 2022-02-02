@@ -16,6 +16,7 @@ namespace NavPageSample.page
         
     // Launcher.OpenAsync is provided by Xamarin.Essentials.
     public ICommand TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+       
 
     
     public MainPage3()
@@ -41,15 +42,7 @@ namespace NavPageSample.page
                     TextType = TextType.Html
                 };
             }
-            else if (result == null) {
-                msg.Text = result.Text;
-
-                Label label = new Label
-                {
-                    Text = result.Text,
-                    TextType = TextType.Html
-                };
-            }
+          
  
     }
 
