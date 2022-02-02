@@ -9,7 +9,7 @@
             </Frame>
             <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg" />
 
-            <Label Text="{Binding Source={x:Reference msg},Path=Text}"/>
+            <Label Text="{Binding Source={x:Reference msg},Path=Text}" TextDecorations="Underline" TextType="Html"/>
             
         </StackLayout>
         
