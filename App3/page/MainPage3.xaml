@@ -7,16 +7,21 @@
             <Frame BackgroundColor="#000000" Padding="24" CornerRadius="0">
                 <Label Text="薬の登録" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
-            <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg"/>
+            <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg" />
+
+          
+                <Label Text="{Binding Source={x:Reference msg},Path=Text}"  TextType="Html "/>
+
             <Label>
                 <Label.FormattedText>
                     <FormattedString>
-                        <Span Text="URL:"
+                        <Span Text="QRを読み込んでからクリックお願いします ⇒" />
+                        <Span Text="サイトへ移動"   
                   TextColor="Blue"
                   TextDecorations="Underline">
                             <Span.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding TapCommand}"
-                                          CommandParameter="result"/>
+                                          CommandParameter="{Binding Source={x:Reference msg},Path=Text}"/>
                             </Span.GestureRecognizers>
                         </Span>
                     </FormattedString>
