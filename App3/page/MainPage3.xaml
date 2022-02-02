@@ -8,6 +8,8 @@
                 <Label Text="薬の登録" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
             <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg" />
+
+            <Label Text="{Binding Source={x:Reference msg},Path=Text}"/>
         </StackLayout>
         
     </ContentPage.Content>
