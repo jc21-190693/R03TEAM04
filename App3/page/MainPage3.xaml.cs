@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,10 +13,16 @@ namespace NavPageSample.page
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage3 : ContentPage
     {
-        public MainPage3()
+        
+    // Launcher.OpenAsync is provided by Xamarin.Essentials.
+    public ICommand TapCommand => new Command<string>(async (url) => await Launcher.OpenAsync(url));
+
+    
+    public MainPage3()
         {
             InitializeComponent();
-        }
+             BindingContext = this;
+    }
 
         private async void Button4_Clicked(object sender, EventArgs e)
         {

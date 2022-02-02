@@ -9,8 +9,26 @@
             </Frame>
             <Button Text="QRリーダーを起動" Clicked="Button4_Clicked" x:Name="msg" />
 
-            <Label Text="{Binding Source={x:Reference msg},Path=Text}"  TextType="Html"/>
-            
+          
+                <Label Text="{Binding Source={x:Reference msg},Path=Text}"  TextType="Html "/>
+
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Alternatively, click " />
+                        <Span Text="here"
+                  TextColor="Blue"
+                  TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding TapCommand}"
+                                          CommandParameter="https://docs.microsoft.com/xamarin/" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                        <Span Text=" to view Xamarin documentation." />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
         </StackLayout>
         
     </ContentPage.Content>
